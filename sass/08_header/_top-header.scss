@@ -1,0 +1,106 @@
+.top-nav {
+	background: $primary;
+	margin-bottom: 0px;
+	line-height:40px;
+	.ten ,.six{
+		color: $secondary;    
+	}
+	aside {
+		margin-bottom: 10px;
+		display:inline-block;
+	}
+	.textwidget {
+		padding:0;
+	}
+	.widget_text {
+		margin:0px;    
+	}
+	font-size:13px;
+	a {
+		color:$secondary;
+		font-size:13px;
+	}
+	i,.fa {
+		padding-right:7px;
+	}
+	.cart-left {
+		a {
+			color:$secondary;
+			font-size:15px;
+			i,.fa {
+				padding-right:7px;
+			}
+		}
+		font-size:15px;
+		
+	}
+	.cart-right { 
+		text-align:right;
+		font-size:15px;
+		a {
+			color:$secondary;
+			font-size:15px;
+		}
+		ul {
+			li {
+				margin-right:5px;
+				a {
+					padding:0px 5px;
+					i {
+						font-size:14px;
+					}
+				}
+			}
+		}
+	}
+	ul {   
+		margin:0;
+		li {
+			list-style: none;
+			padding:0px;
+			display:inline-block;
+			border-bottom: none !important;
+			margin-right: 30px;
+			a {
+				color: $secondary;
+				display: inline;
+				font-size:13px;
+				padding:0px 10px;
+			}
+			i {
+				@include font-size(1.5);	
+				padding-right: 5px;	
+				display: inline-block;
+			}
+		}
+	}
+
+}
+
+
+/*Header Right*/
+
+.header-right {
+	padding:25px 0px;
+	.seven.columns,.nine.columns {
+		display:inline-block;
+		//width:48%;
+		color:$secondary;
+		font-size:20px;
+		font-weight:700;
+		line-height:1.4;
+		i {
+			font-size:48px;
+			float:left;
+			color:$c3;
+			margin-right:10px;
+		}
+		span {
+			color:$c3;
+			font-weight:normal;
+			font-size:14px;
+			display:block;
+		}
+
+	}
+}
