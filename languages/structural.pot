@@ -208,12 +208,28 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
+#: search.php:25
+msgid "Search Results for: %s"
+msgstr ""
+
 #: single.php:37
 msgid "About Author:"
 msgstr ""
 
 #: template-full-width.php:2
 msgid "Full Width Template"
+msgstr ""
+
+#: admin/class.structural-customizer-api-wrapper.php:256
+msgid "Choose Post"
+msgstr ""
+
+#: includes/custom-header.php:98
+msgid "Play background video"
+msgstr ""
+
+#: includes/custom-header.php:99
+msgid "Pause background video"
 msgstr ""
 
 #: includes/enqueue.php:38
@@ -863,6 +879,10 @@ msgstr ""
 
 #: includes/template-tags.php:491
 msgid "Get started with Structural"
+msgstr ""
+
+#: template-parts/breadcrumb.php:17
+msgid "You are here:"
 msgstr ""
 
 #: template-parts/content-none.php:14

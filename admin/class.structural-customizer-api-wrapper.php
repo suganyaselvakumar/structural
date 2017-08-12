@@ -253,7 +253,7 @@ if( ! class_exists('Structural_Customizer_API_Wrapper') ) {
 					break;
 				case 'posts':
 					$posts_list = array();
-					$posts_list[''] = __( 'Choose Post', 'oner' );
+					$posts_list[''] = __( 'Choose Post', 'structural' );
 					foreach ( get_posts('posts_per_page=-1') as $posts ){
 						$posts_list[$posts->ID] = $posts->post_title;
 					}

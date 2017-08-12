@@ -14,7 +14,7 @@ if( !is_front_page() ): ?>
 					<?php the_title('<h2>','</h2>');?>	
 					<?php if( $breadcrumb ) : ?>	
 						<div class="breadcrumb-text">	
-							<span class="txt-bread"><?php _e('You are here:','Structural');?></span>
+							<span class="txt-bread"><?php _e('You are here:','structural');?></span>
 							<?php structural_breadcrumbs(); ?>
 						</div>
 					<?php endif; ?>

@@ -12,7 +12,7 @@
 get_header(); 
    
 get_template_part( 'template-parts/breadcrumb' ); ?>
-	
+	 
 <div id="content" class="site-content">
 		<div class="container">
 		

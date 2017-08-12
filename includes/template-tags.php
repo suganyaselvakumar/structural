@@ -581,7 +581,7 @@ if( ! function_exists ( 'structural_add_image_content_section' ) ) {
 		$image_content_2 = intval(get_theme_mod('image_content_section_2'));
 		$image_content_section_title = intval(get_theme_mod('image_content_section_title'));
 		$image_content_section = get_theme_mod('image_content_section_status',true);
-		if ($image_content_section) { ?>
+		if ($image_content_section &&  ($image_content_id || $image_content_2) )  { ?>
 			<div class="content-section-wrapper">
 				<div class="container">
 					<main id="main" class="site-main clearfix" role="main">

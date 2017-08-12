@@ -138,12 +138,12 @@ a[href="themes.php?page=structural_upgrade"] {
     display: block;
 }
 
-.primal-wrapper {
+.structural-wrapper {
   margin: 25px 40px 0 20px;
 }
 
 /* tab style */
-.primal-wrapper .nav-tab {
+.structural-wrapper .nav-tab {
    font-size: 18px;
     padding-left: 15px;
     padding-right: 15px;

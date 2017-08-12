@@ -21,7 +21,7 @@ if ( is_singular() && pings_open() ) { ?>
 <body <?php body_class(); ?>>  
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'structural' ); ?></a>
-	<?php do_action('primal_before_header'); ?>
+	<?php do_action('structural_before_header'); ?>
 	<header id="masthead" class="site-header" role="banner">   
 			<?php if( is_active_sidebar( 'top-left' )  || is_active_sidebar( 'top-right' ) ): ?>
 				<div class="top-nav">

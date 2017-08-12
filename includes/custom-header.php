@@ -31,7 +31,8 @@ function structural_custom_header_setup() {
 		'width'                  => 1920,
 		'height'                 => 400,
 		'flex-height'            => true, 
-		'wp-head-callback'       => 'structural_header_style'
+		'wp-head-callback'       => 'structural_header_style',
+		'video' => true
 	) ) );
 }
 
@@ -86,7 +87,7 @@ function structural_header_style() {
 		}
     }
 }
-endif; // equity_header_style
+endif; // structural_header_style
 
 
 /**
@@ -94,8 +95,8 @@ endif; // equity_header_style
  */
 if(!function_exists('structural_video_controls') ) {
 	function structural_video_controls( $settings ) {
-		$settings['l10n']['play'] = '<span class="screen-reader-text">' . __( 'Play background video', 'equity' ) . '</span><i class="fa fa-play"></i>';
-		$settings['l10n']['pause'] = '<span class="screen-reader-text">' . __( 'Pause background video', 'equity' ) . '</span><i class="fa fa-pause"></i>';
+		$settings['l10n']['play'] = '<span class="screen-reader-text">' . __( 'Play background video', 'structural' ) . '</span><i class="fa fa-play"></i>';
+		$settings['l10n']['pause'] = '<span class="screen-reader-text">' . __( 'Pause background video', 'structural' ) . '</span><i class="fa fa-pause"></i>';
 		return $settings;
 	}
 }
