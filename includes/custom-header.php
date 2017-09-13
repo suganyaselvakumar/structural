@@ -32,7 +32,7 @@ function structural_custom_header_setup() {
 		'height'                 => 400,
 		'flex-height'            => true, 
 		'wp-head-callback'       => 'structural_header_style',
-		'video' => true
+		'video'                  => true
 	) ) );
 }
 

@@ -331,7 +331,7 @@ function structural_display_upgrade() {
    
 
 	$options = array(
-		'capability' => 10,
+		'capability' => 'edit_theme_options',
 		'type' => 'theme_mod',
 		'panels' => apply_filters( 'structural_customizer_options', array(
 			'structural' => array(
@@ -595,6 +595,7 @@ function structural_display_upgrade() {
 							'image_content_section_title' => array(
 								'type' => 'dropdown-pages',
 								'label' => __('Section Title & Description', 'structural'),
+							    'sanitize_callback' => 'absint',
 							),
 							'image_content_section_1' => array(
 								'type' => 'dropdown-pages',
@@ -623,6 +624,7 @@ function structural_display_upgrade() {
 							'recent_post_section_title' => array(
 								'type' => 'dropdown-pages',
 								'label' => __('Section Title & Description', 'structural'),
+							    'sanitize_callback' => 'absint',
 							),
 							'recent_posts_count' => array(
 								'type' => 'text',

@@ -40,7 +40,8 @@ html {
 body {
   background: #fff;
   
-  overflow: hidden; }
+  overflow: hidden;
+  direction: rtl; }
 
 article,
 aside,
@@ -1431,11 +1432,11 @@ ol.comment-list .reply {
   background: #ffb500;
   border-radius: 2px; }
   ol.comment-list .reply:hover {
-    background: #000; }
+    background: #fff; }
+    ol.comment-list .reply:hover a, ol.comment-list .reply:hover:before {
+      color: #131e32; }
   ol.comment-list .reply a {
     color: #fff; }
-  ol.comment-list .reply:hover a, ol.comment-list .reply:hover:before {
-    color: #131e32; }
 
 .byuser .reply a:hover {
   color: #fff; }
@@ -1452,7 +1453,7 @@ ol.comment-list .reply {
     .comment-author .fn a {
       color: #ffb500; }
       .comment-author .fn a:hover {
-        color: #131e32; }
+        color: #fff; }
 
 ol.comment-list article {
   margin-top: 30px;
@@ -1476,7 +1477,7 @@ ol.comment-list article .comment-author img {
   height: 100px; }
 
 ol.comment-list li.byuser .comment-metadata a:hover {
-  color: #131e32; }
+  color: #fff; }
 
 .comment-meta .edit-link {
   position: absolute;
@@ -1508,6 +1509,8 @@ ol.comment-list li {
     clear: both; }
     ol.comment-list li ol li {
       clear: both; }
+  ol.comment-list li a:hover {
+    color: #fff; }
 
 .comment-form input[type="text"], .comment-form input[type="email"] {
   float: right;

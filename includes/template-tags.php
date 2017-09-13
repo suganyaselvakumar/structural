@@ -16,7 +16,7 @@ function structural_post_nav() {
 	$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
 	$next     = get_adjacent_post( false, '', false );
 
-	if ( ! $next && ! $previous ) {
+	if ( ! $next && ! $previous ) {  
 		return;
 	}
 	?>
@@ -151,6 +151,11 @@ if( ! function_exists('structural_recent_posts') ) {
 									$output .='</div><!-- entry-meta -->';	*/	
 									$output .= '<div class="latest-post-content">';
 										$output .= '<p>' . get_the_content() . '</p>';
+										$output .= wp_link_pages( array(
+											'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'structural' ),
+											'after'  => '</div>',
+											'echo' => false
+										) );
 									$output .= '</div><!-- .latest-post-content -->';
 								$output .= '</div><!-- .latest-post-details -->';
 						$output .= '</div><!-- .latest-post -->';
@@ -305,7 +310,7 @@ if( ! function_exists('structural_recent_posts') ) {
 
 			if ( get_query_var('paged') ) {
 				if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
-				echo __('Page', 'structural' ) . ' ' . get_query_var('paged');
+				 _e('Page', 'structural' ) . ' ' . get_query_var('paged');
 				if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
 			}
 
@@ -522,7 +527,7 @@ if( ! function_exists ( 'structural_add_service_section' ) ) {
 			$args = array(
 				'post_type' => 'page',
 				'post__in' => $service_pages,
-				'posts_per_page' => -1,
+				'posts_per_page' => 3,
 				'orderby' => 'post__in'
 			);
 			$query = new WP_Query($args); 
@@ -535,13 +540,10 @@ if( ! function_exists ( 'structural_add_service_section' ) ) {
 							    	
 							    	    <?php if($i == 1):
 							    	      $icon_url =  $service_section_icon_1;
-							    	      //$icon_color =  $service_color_1;
 							    	      elseif($i == 2):
 							    	       $icon_url =  $service_section_icon_2;
-							    	   	  // $icon_color =  $service_color_2;
 							    	      elseif($i == 3):
 							    	       	$icon_url =  $service_section_icon_3;
-							    	      // 	$icon_color =  $service_color_3;
 							    	      endif;
 
 						    	        if($icon_url): ?>
@@ -555,7 +557,11 @@ if( ! function_exists ( 'structural_add_service_section' ) ) {
 							    	
 							    	<div class="service-content">
 							    	    <?php the_title( sprintf( '<h4><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?>
-								    	<?php the_content( __( 'Read More', 'structural' ) ); ?>
+								    	<?php the_content( __( 'Read More', 'structural' ) );
+								    	wp_link_pages( array(
+											'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'structural' ),
+											'after'  => '</div>',
+										) ); ?>
 							    	</div>
 							    </div>
 							    <?php $i++;
@@ -597,7 +603,7 @@ if( ! function_exists ( 'structural_add_image_content_section' ) ) {
 						$args = array(
 							'post_type' => 'page',
 							'post__in' => $image_content_pages,
-							'posts_per_page' => -1,
+							'posts_per_page' => 3,
 							'orderby' => 'post__in'
 						);
 						$query = new WP_Query($args);

@@ -130,7 +130,7 @@ function structural_setup() {
 		        	'text' , 
 		        	// Widget $instance -> settings 
 					array (
-					  'text'  => '<div class="seven columns"><i class="fa fa-phone"></i>1-775-97-377<span>info@mail.com</span></div><div class="nine columns right"><i class="fa fa-home"></i>14 Tottenham Court Road<span>London, England.</span></div>'
+					  'text'  => __('<div class="seven columns"><i class="fa fa-phone"></i>1-775-97-377<span>info@mail.com</span></div><div class="nine columns right"><i class="fa fa-home"></i>14 Tottenham Court Road<span>London, England.</span></div>','structural')
 					)
 				),
 			),

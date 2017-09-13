@@ -4,7 +4,7 @@ Theme URI: http://www.webulousthemes.com/structural/
 Author: N. Venkat Raj  
 Author URI: http://www.webulousthemes.com/
 Description: Structural is a constrcution based theme. It is an attractive, modern, easy to use and responsive WordPress theme with colorful design and stunning flexibility. There is no theme options panel, instead uses Customizer, core feature of WordPress and comes with lots of options to customize. Some of the available options are awesome slider section, header options, footer options, layout design options, widget options and lots of other available options will allow you to create unique website as you want. 
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: structural
@@ -88,7 +88,8 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
-  overflow: hidden; }
+  overflow: hidden;
+  direction: ltr; }
 
 article,
 aside,
@@ -1507,11 +1508,11 @@ ol.comment-list .reply {
   background: #ffb500;
   border-radius: 2px; }
   ol.comment-list .reply:hover {
-    background: #000; }
+    background: #fff; }
+    ol.comment-list .reply:hover a, ol.comment-list .reply:hover:before {
+      color: #131e32; }
   ol.comment-list .reply a {
     color: #fff; }
-  ol.comment-list .reply:hover a, ol.comment-list .reply:hover:before {
-    color: #131e32; }
 
 .byuser .reply a:hover {
   color: #fff; }
@@ -1528,7 +1529,7 @@ ol.comment-list .reply {
     .comment-author .fn a {
       color: #ffb500; }
       .comment-author .fn a:hover {
-        color: #131e32; }
+        color: #fff; }
 
 ol.comment-list article {
   margin-top: 30px;
@@ -1552,7 +1553,7 @@ ol.comment-list article .comment-author img {
   height: 100px; }
 
 ol.comment-list li.byuser .comment-metadata a:hover {
-  color: #131e32; }
+  color: #fff; }
 
 .comment-meta .edit-link {
   position: absolute;
@@ -1584,6 +1585,8 @@ ol.comment-list li {
     clear: both; }
     ol.comment-list li ol li {
       clear: both; }
+  ol.comment-list li a:hover {
+    color: #fff; }
 
 .comment-form input[type="text"], .comment-form input[type="email"] {
   float: left;

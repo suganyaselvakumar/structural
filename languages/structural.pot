@@ -21,6 +21,14 @@ msgstr ""
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr ""
 
+#: archive.php:51, index.php:48, search.php:48
+msgid " &larr; Previous Post"
+msgstr ""
+
+#: archive.php:52, index.php:49, search.php:49
+msgid "Next Post &rarr;"
+msgstr ""
+
 #: comments.php:28
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
@@ -76,12 +84,20 @@ msgstr ""
 msgid "Theme: Structural by <a href=\"%1$s\" target=\"_blank\" rel=\"designer\">Webulous Themes</a></p>"
 msgstr ""
 
-#: front-page.php:38, includes/template-tags.php:449, includes/template-tags.php:558, template-parts/content-single.php:40, template-parts/content.php:45
+#: front-page.php:38, includes/template-tags.php:454, includes/template-tags.php:560, template-parts/content-single.php:40, template-parts/content.php:45
 msgid "Read More"
+msgstr ""
+
+#: front-page.php:40, front-page.php:75, includes/template-tags.php:155, includes/template-tags.php:562, template-parts/content-single.php:50, template-parts/content.php:55
+msgid "Pages: "
 msgstr ""
 
 #: functions.php:47
 msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:133
+msgid "<div class=\"seven columns\"><i class=\"fa fa-phone\"></i>1-775-97-377<span>info@mail.com</span></div><div class=\"nine columns right\"><i class=\"fa fa-home\"></i>14 Tottenham Court Road<span>London, England.</span></div>"
 msgstr ""
 
 #: functions.php:145
@@ -222,6 +238,10 @@ msgstr ""
 
 #: admin/class.structural-customizer-api-wrapper.php:256
 msgid "Choose Post"
+msgstr ""
+
+#: admin/control-icon-picker.php:42
+msgid "Inline picker"
 msgstr ""
 
 #: includes/custom-header.php:98
@@ -697,7 +717,7 @@ msgstr ""
 msgid "Check this box to Show this section"
 msgstr ""
 
-#: includes/options-config.php:532, includes/options-config.php:597, includes/options-config.php:625
+#: includes/options-config.php:532, includes/options-config.php:597, includes/options-config.php:626
 msgid "Section Title & Description"
 msgstr ""
 
@@ -741,39 +761,39 @@ msgstr ""
 msgid "Section: Image Content"
 msgstr ""
 
-#: includes/options-config.php:601
+#: includes/options-config.php:602
 msgid "Image content Section #1"
 msgstr ""
 
-#: includes/options-config.php:606
+#: includes/options-config.php:607
 msgid "Image content Section #2"
 msgstr ""
 
-#: includes/options-config.php:613
+#: includes/options-config.php:614
 msgid "Recent Blog"
 msgstr ""
 
-#: includes/options-config.php:614, includes/options-config.php:637
+#: includes/options-config.php:615, includes/options-config.php:639
 msgid "Default Page content related option"
 msgstr ""
 
-#: includes/options-config.php:618
+#: includes/options-config.php:619
 msgid "Enable Home Page Recent Post Section"
 msgstr ""
 
-#: includes/options-config.php:619
+#: includes/options-config.php:620
 msgid "Enable recent post section in home page"
 msgstr ""
 
-#: includes/options-config.php:629
+#: includes/options-config.php:631
 msgid "No. of Recent Posts"
 msgstr ""
 
-#: includes/options-config.php:636
+#: includes/options-config.php:638
 msgid "Page Content"
 msgstr ""
 
-#: includes/options-config.php:641
+#: includes/options-config.php:643
 msgid "Check this box to Show page content"
 msgstr ""
 
@@ -800,84 +820,84 @@ msgstr ""
 msgid "%1$s "
 msgstr ""
 
-#: includes/template-tags.php:178
+#: includes/template-tags.php:183
 msgid "Home"
 msgstr ""
 
-#: includes/template-tags.php:179
+#: includes/template-tags.php:184
 msgid "Archive by Category \"%s\""
 msgstr ""
 
-#: includes/template-tags.php:180
+#: includes/template-tags.php:185
 msgid "Search Results for \"%s\" Query"
 msgstr ""
 
-#: includes/template-tags.php:181
+#: includes/template-tags.php:186
 msgid "Posts Tagged \"%s\""
 msgstr ""
 
-#: includes/template-tags.php:182
+#: includes/template-tags.php:187
 msgid "Articles Posted by %s"
 msgstr ""
 
-#: includes/template-tags.php:183
+#: includes/template-tags.php:188
 msgid "Error 404"
 msgstr ""
 
-#: includes/template-tags.php:236, includes/template-tags.php:236, includes/template-tags.php:237, includes/template-tags.php:241, includes/template-tags.php:241, includes/template-tags.php:245
+#: includes/template-tags.php:241, includes/template-tags.php:241, includes/template-tags.php:242, includes/template-tags.php:246, includes/template-tags.php:246, includes/template-tags.php:250
 msgid "Y"
 msgstr ""
 
-#: includes/template-tags.php:237
+#: includes/template-tags.php:242
 msgid "m"
 msgstr ""
 
-#: includes/template-tags.php:237, includes/template-tags.php:242
+#: includes/template-tags.php:242, includes/template-tags.php:247
 msgid "F"
 msgstr ""
 
-#: includes/template-tags.php:238
+#: includes/template-tags.php:243
 msgid "d"
 msgstr ""
 
-#: includes/template-tags.php:308
+#: includes/template-tags.php:313
 msgid "Page"
 msgstr ""
 
-#: includes/template-tags.php:323, includes/template-tags.php:334
+#: includes/template-tags.php:328, includes/template-tags.php:339
 msgctxt "post author"
 msgid " %s"
 msgstr ""
 
-#: includes/template-tags.php:354
+#: includes/template-tags.php:359
 msgid "No Comments"
 msgstr ""
 
-#: includes/template-tags.php:356
+#: includes/template-tags.php:361
 msgid " Comments"
 msgstr ""
 
-#: includes/template-tags.php:358
+#: includes/template-tags.php:363
 msgid "1 Comment"
 msgstr ""
 
-#: includes/template-tags.php:362
+#: includes/template-tags.php:367
 msgid "Leave a comment"
 msgstr ""
 
-#: includes/template-tags.php:371, template-parts/content-page.php:29
+#: includes/template-tags.php:376, template-parts/content-page.php:29
 msgid "Edit"
 msgstr ""
 
-#: includes/template-tags.php:418, includes/template-tags.php:421
+#: includes/template-tags.php:423, includes/template-tags.php:426
 msgid "No Related Posts Yet!"
 msgstr ""
 
-#: includes/template-tags.php:490
+#: includes/template-tags.php:495
 msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
 msgstr ""
 
-#: includes/template-tags.php:491
+#: includes/template-tags.php:496
 msgid "Get started with Structural"
 msgstr ""
 
@@ -903,8 +923,4 @@ msgstr ""
 
 #: template-parts/content-page.php:23
 msgid "Pages:"
-msgstr ""
-
-#: template-parts/content-single.php:50, template-parts/content.php:55
-msgid "Pages: "
 msgstr ""

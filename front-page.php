@@ -35,7 +35,11 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 								    		<?php the_post_thumbnail('full'); ?>
 								    	</div>
 								    	<div class="flex-caption">
-								    		<?php the_content( __('Read More','structural') ); ?>
+								    		<?php the_content( __('Read More','structural') ); 
+									    	wp_link_pages( array(
+												'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'structural' ),
+												'after'  => '</div>',
+											) ); ?>
 								    	</div>
 								    </li>
 							    <?php endif;?>			   
@@ -67,6 +71,10 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 				<main id="main" class="site-main" role="main"><?php
 					while ( have_posts() ) : the_post();       
 						the_content();
+						wp_link_pages( array(
+							'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'structural' ),
+							'after'  => '</div>',
+						) );
 					endwhile; ?>
 			    </main><!-- #main -->
 		    </div><!-- #primary -->
