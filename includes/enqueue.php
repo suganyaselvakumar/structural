@@ -58,7 +58,7 @@ function structural_admin_enqueue_scripts( $hook ) {
 			'1.0.0', 
 			'all' 
 		);
-	}
+	}   
 	wp_enqueue_script( 
 		'structural-customizer-script', 
 		get_template_directory_uri() . '/js/admin-custom.js',

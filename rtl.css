@@ -1839,6 +1839,7 @@ blockquote, q {
 
 .content-section-wrapper {
   background: url(images/bg.png);
+  color: #fff;
   padding: 70px 0px; }
   .content-section-wrapper .site-main {
     margin: 0px; }
@@ -1862,6 +1863,10 @@ blockquote, q {
       .content-section-wrapper .service-content ul i {
         margin-left: 10px;
         color: #ffb500; }
+  .content-section-wrapper .section-head {
+    color: #fff; }
+    .content-section-wrapper .section-head h1, .content-section-wrapper .section-head h2, .content-section-wrapper .section-head h3, .content-section-wrapper .section-head h4, .content-section-wrapper .section-head h5, .content-section-wrapper .section-head h6 {
+      color: #fff; }
 
 
 .post-wrapper {

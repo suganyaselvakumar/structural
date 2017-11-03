@@ -2,14 +2,14 @@
 Contributors: Webulous
 Tags: blog, news, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, translation-ready, theme-options, rtl-language-support
 Requires at least: 4.0
-Tested up to: 4.8.1
-Stable tag: 1.0.1
+Tested up to: 4.8.3
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-
+  
 Structural is best suited for all types of site and uses Theme Customizer.
 
-Structural WordPress Theme, Copyright (C) 2017, V. Uma Rani
+Structural WordPress Theme, Copyright (C) 2017, N. Venkat Raj
 Structural is distributed under the terms of the GNU GPL
 
 Structural WordPress Theme is derived from Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
@@ -46,12 +46,12 @@ Enable/Disable featured images visibility.
 
 == Changelog ==
 
-= 1.0.1 =
+= 1.0.2 =
 * Initial Release
 
 == Upgrade Notice ==
 
-= 1.0.1 =
+= 1.0.2 =
 * Initial Release
 
 Structural WordPress Theme bundles the following third-party resources:
@@ -67,4 +67,5 @@ Structural WordPress Theme bundles the following third-party resources:
 		https://pixabay.com/en/architecture-skyscraper-urban-city-768432/
 		https://pixabay.com/en/singapore-marina-bay-sands-landmark-246836/
 		https://pixabay.com/en/architecture-building-cctv-concrete-1839357/
+		https://pixabay.com/en/cleanliness-maid-maintains-cleaning-2799459/
 * Except above All Images inside the images folder are created by own. Those Image are licensed under CC0 Public Domain License GPLv3.

@@ -129,7 +129,7 @@ if( ! function_exists('structural_recent_posts') ) {
 				$output.= '<p class="sub-description">' . $description . '</p>';
 			    $output.= '</div>';
 			}
-			$output .=  '<div class="container"><main id="main" class="site-main" role="main">'; 
+			$output .=  '<div class="container">'; 
 			$output .= '<div class="latest-posts clearfix">';
 			while ( $query->have_posts() ) {
 				$query->the_post();
@@ -162,7 +162,7 @@ if( ! function_exists('structural_recent_posts') ) {
 				$output .= '</div>';
 			}
 			$output .= '</div><!-- latest post end -->';
-			$output .= '</main></div>';
+			$output .= '</div>';
 			$output .= '</div><!-- .post-wrapper -->';
 		} 
 		$query = null;
@@ -629,7 +629,11 @@ if( ! function_exists ( 'structural_add_image_content_section' ) ) {
 								    <div class="eight columns">
 								    	<div class="service-content">
 								    	    <?php the_title( sprintf( '<h3 class="title-divider"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
-									    	<?php the_content(); ?>
+									    	<?php the_content();
+										    	wp_link_pages( array(
+												'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'structural' ),
+												'after'  => '</div>',
+											) );  ?>
 								    	</div>
 								    </div>
 								<?php }

@@ -79,6 +79,7 @@
 
 .content-section-wrapper {
   background:url(images/bg.png);
+  color: $white;
   padding:70px 0px;
   .site-main {
     margin:0px;
@@ -111,6 +112,12 @@
         margin-right:10px;
         color:$primary;
       }
+    }
+  }
+  .section-head {
+    color: $white;
+    h1,h2,h3,h4,h5,h6 {
+      color: $white;
     }
   }
 }

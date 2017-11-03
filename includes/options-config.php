@@ -172,6 +172,7 @@ function structural_display_upgrade() {
 
 	   <h2 class="nav-tab-wrapper">
 	        <a href="?page=structural_upgrade" class="nav-tab<?php echo is_null($tab) ? ' nav-tab-active' : null; ?>"><?php echo $theme_data->Name; ?></a>
+	      	<a href="?page=structural_upgrade&tab=one_click_demo" class="nav-tab<?php echo $tab == 'one_click_demo' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'Import Demo Data', 'structural' );  ?></a>
 	        <a href="?page=structural_upgrade&tab=pro_features" class="nav-tab<?php echo $tab == 'pro_features' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'PRO Features', 'structural' );  ?></a>
             <a href="?page=structural_upgrade&tab=free_vs_pro" class="nav-tab<?php echo $tab == 'free_vs_pro' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'Free VS PRO', 'structural' ); ?></a>
 	        <?php do_action( 'structural_admin_more_tabs' ); ?>
@@ -212,6 +213,18 @@ function structural_display_upgrade() {
                 </div>
             </div>
         <?php } ?>
+
+         <?php if ( $tab == 'one_click_demo' ) { ?>
+            <div class="one-click-demo-tab info-tab-content">
+				<div class="wrap clearfix"><?php
+				    _e('After Install recommended & required plugins.','structural');
+				    include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+				    if ( is_plugin_active( 'one-click-demo-import/one-click-demo-import.php' ) ) {							
+                      printf( __('<a href="%1$s">Click here to install the demo</a>','structural'), admin_url('themes.php?page=pt-one-click-demo-import') ); 
+				    } ?>
+				</div>
+			</div><?php   
+		} ?> 
 
         <?php if ( $tab == 'pro_features' ) { ?>
             <div class="pro-features-tab info-tab-content"><?php
