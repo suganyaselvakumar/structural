@@ -217,7 +217,7 @@ function structural_display_upgrade() {
          <?php if ( $tab == 'one_click_demo' ) { ?>
             <div class="one-click-demo-tab info-tab-content">
 				<div class="wrap clearfix"><?php
-				    _e('After Install recommended & required plugins.','structural');
+				    _e('Install required & recommended plugins.','structural');
 				    include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 				    if ( is_plugin_active( 'one-click-demo-import/one-click-demo-import.php' ) ) {							
                       printf( __('<a href="%1$s">Click here to install the demo</a>','structural'), admin_url('themes.php?page=pt-one-click-demo-import') ); 
@@ -243,8 +243,8 @@ function structural_display_upgrade() {
 		                <thead>
 			                <tr>
 			                    <th></th>
-			                    <th><?php echo $theme_data->Name; ?> Lite</th>
-			                    <th><?php echo $theme_data->Name; ?> PRO</th>
+			                    <th><?php echo esc_html($theme_data->Name); ?> Lite</th>
+			                    <th><?php echo esc_html($theme_data->Name); ?> PRO</th>
 			                </tr>
 		                </thead>
 		                <tbody>

@@ -48,7 +48,7 @@ if ( is_singular() && pings_open() ) { ?>
 							<?php 
 								$logo_title = get_theme_mod( 'logo_title' );   
 								$tagline = get_theme_mod( 'tagline',true);
-								if( $logo_title && function_exists( 'the_custom_logo' ) ) :
+								if( $logo_title ) :
 	                                the_custom_logo();     
 	                            else : ?>
 									<h3 class="site-title"><a style="color: #<?php header_textcolor(); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>

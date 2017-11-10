@@ -95,7 +95,7 @@ function structural_setup() {
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
 	// Define and register starter content to showcase the theme on new sites.
-	/* $starter_content = array(
+	 $starter_content = array(
 		'widgets' => array(
 		
 			'top-left' => array(
@@ -280,7 +280,7 @@ function structural_setup() {
 
 	$starter_content = apply_filters( 'structural_starter_content', $starter_content );
 
-	add_theme_support( 'starter-content', $starter_content ); */
+	add_theme_support( 'starter-content', $starter_content ); 
 
 	     
 }
