@@ -289,10 +289,29 @@ blockquote,q {
 
 .search {
 	article {
+		h1 {
+			line-height: 1.25;
+  			margin-bottom: 10px;
+  			a {
+  				color:$secondary;
+  			}
+		}
+		.entry-content {
+			a.more-link {
+				background: $primary;
+				padding: 8px 30px;
+				display: inline-block;
+				font-size: 16px;
+				font-size: 1.6rem;
+				color: #fff;
+				font-weight: 500;
+			}
+		}
 		.entry-meta {
 			text-transform:uppercase;
 			span {
 				position:relative;
+				
 				&:after {
 					position:absolute;
 					content:"-";
@@ -302,12 +321,16 @@ blockquote,q {
 					
 				}
 				a {
-					color:$secondary;
-					font-size:14px;
-					padding:0px 10px 0px 20px;
+					color:$c3;
+					font-size: 14px;
+	  				padding-right: 30px;
 					&:hover {
 						color:$primary;
 					}
+				}
+				i {
+					font-size: 14px;
+  					margin-right: 8px;
 				}
 				&:last-child {
 					&:after{
@@ -315,31 +338,14 @@ blockquote,q {
 					}
 				}
 			}
+			.cat-links {
+				a {
+					padding-right: 0px;
+				}
+			}
 			.author {
 				a {
 					padding-left:0px;
-				}
-			}
-		}
-		.entry-date {
-			border:2px solid $primary;
-			float:left;
-			text-align:center;
-			width:15%;
-			.date-structure {
-				display:inline-block;
-				padding:5px 0px;
-				color:$primary;
-				line-height:1;
-				h2 {
-					font-size:54px;
-					color:$primary;
-					margin-bottom:0px;
-				}	
-				span {
-					display:block;
-					font-size:16px;
-					font-weight:bold;
 				}
 			}
 		}

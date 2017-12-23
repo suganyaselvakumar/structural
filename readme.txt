@@ -2,8 +2,8 @@
 Contributors: Webulous
 Tags: blog, news, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, translation-ready, theme-options, rtl-language-support
 Requires at least: 4.0
-Tested up to: 4.8.3
-Stable tag: 1.0.3
+Tested up to: 4.9.1
+Stable tag: 1.0.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
   
@@ -46,12 +46,12 @@ Enable/Disable featured images visibility.
 
 == Changelog ==
 
-= 1.0.3 =
+= 1.0.7 =
 * Initial Release
 
 == Upgrade Notice ==
 
-= 1.0.3 =
+= 1.0.7 =
 * Initial Release
 
 Structural WordPress Theme bundles the following third-party resources:
@@ -61,11 +61,12 @@ Structural WordPress Theme bundles the following third-party resources:
 * {Flexslider} © 2015 Woo Themes, GPLv2 ,https://github.com/woothemes/FlexSlider
 * {FontAwesome Icon Picker} © Licensed under the MIT License, https://github.com/mjolnic/fontawesome-iconpicker/blob/master/LICENSE
 * {FontAwesome} © Dave Gandy, SIL OFL 1.1 and MIT ,https://fortawesome.github.io/Font-Awesome
+* {TGM Plugin Activation} library is licensed under the GPL-2.0, https://github.com/TGMPA/TGM-Plugin-Activation/
+
 * Screenshot Images is licensed under CC0 Public Domain License.(http://pixabay.com/en/service/terms/)
 		https://pixabay.com/en/digital-art-city-cities-urban-182223/
 		https://pixabay.com/en/chicago-usa-america-united-states-690364/
 		https://pixabay.com/en/architecture-skyscraper-urban-city-768432/
 		https://pixabay.com/en/singapore-marina-bay-sands-landmark-246836/
 		https://pixabay.com/en/architecture-building-cctv-concrete-1839357/
-		https://pixabay.com/en/cleanliness-maid-maintains-cleaning-2799459/
-* Except above All Images inside the images folder are created by own. Those Image are licensed under CC0 Public Domain License GPLv3.
+* Except above All Images inside the images folder are created by own. Those Image are licensed under CC0 Public Domain.

@@ -65,7 +65,7 @@ function structural_setup() {
 	/**
 	 * Set the content width in pixels, based on the theme's design and stylesheet.
 	 */
-	$GLOBALS['content_width'] = apply_filters( 'structural_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'structural_content_width', 780 );
 
 
     /* 
@@ -85,6 +85,7 @@ function structural_setup() {
 	 * Add Additional image sizes
 	 *
 	 */
+	add_image_size( 'structural-recent-work', 220, 220, true );
 	add_image_size( 'structural-recent-posts-img', 370, 220, true );
 	add_image_size( 'structural-service-img', 280, 380, true );
 	add_image_size( 'structural-blog-full-width', 380,350, true );
@@ -105,7 +106,7 @@ function structural_setup() {
 		        	'text' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'text'  => '<ul><li><i class="fa fa-phone"></i>(012)1234 5678</li><li><i class="fa fa-clock-o"></i>Mon - Sat:09.00-18.00</li><li><i class="fa fa-envelope"></i>info@main.com</li</ul>'
+					  'text'  => sprintf('<ul><li><i class="fa fa-phone"></i>(012)1234 5678</li><li><i class="fa fa-clock-o"></i>%1$s</li><li><i class="fa fa-envelope"></i>%2$s</li></ul>',__('Mon - Sat:09.00-18.00','structural'),__('example.com','structural'))
 					)
 				)
 			),
@@ -130,7 +131,7 @@ function structural_setup() {
 		        	'text' , 
 		        	// Widget $instance -> settings 
 					array (
-					  'text'  => __('<div class="seven columns"><i class="fa fa-phone"></i>1-775-97-377<span>info@mail.com</span></div><div class="nine columns right"><i class="fa fa-home"></i>14 Tottenham Court Road<span>London, England.</span></div>','structural')
+						'text' => sprintf('<div class="seven columns"><i class="fa fa-phone"></i>1-775-97-377<span>%1$s</span></div><div class="nine columns right"><i class="fa fa-home"></i>%2$s<span>%3$s</span></div>',__('example.com','structural'),__('14 Tottenham Court Road','structural'),__( 'London, England.','structural'))
 					)
 				),
 			),
@@ -156,8 +157,8 @@ function structural_setup() {
 					// Widget $id -> set when creating a Widget Class
 		        	'text' , 
 		        	// Widget $instance -> settings 
-					array(
-					  'text'  => __('<h4 class="widget-title">Contact Details</h4><ul><li>14 Tottenham Court Road, London, English</li><li>(102) 6666 8888</li><li>info@zooka.io</li><li>(102) 8888 9999</li><li>Mon - Sat: 9:00 - 18:00</li></ul>','structural'),
+					array( 
+					  'text' => sprintf('<h4 class="widget-title">%1$s</h4><ul><li>%2$s</li><li>(102) 6666 8888</li><li>%3$s</li><li>(102) 8888 9999</li><li>%4$s</li></ul>',__('Contact Details','structural'),__('14 Tottenham Court Road, London, English','structural'),__('example.com','structural'),__('Mon - Sat: 9:00 - 18:00','structural'))	
 					)
 				)
 			),
@@ -407,7 +408,7 @@ function structural_output_content_wrapper_end () {
 	echo "</div>";
 }
 
-add_action( 'wp_head', 'structural_remove_wc_breadcrumbs' );
+add_action( 'init', 'structural_remove_wc_breadcrumbs' );
 function structural_remove_wc_breadcrumbs() {
    	remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
 }

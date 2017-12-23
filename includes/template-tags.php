@@ -43,10 +43,10 @@ function structural_entry_footer() {
 	
 	if ( 'post' == get_post_type() ) {    
 		/* translators: used between list items, there is a space after the comma */
-		/* translators: used between list items, there is a space after the comma */
+		/* translators: used between list items, there is a space after the comma */	
 		$tags_list = get_the_tag_list( '', __( ', ', 'structural' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links"><span class="tag-title">Tags</span> : ' . __( '%1$s ', 'structural' ) . '</span>', $tags_list );
+			printf( '<span class="tags-links"><span class="tag-title">%1$s</span> : ' . __( '%2$s ', 'structural' ) . '</span>',__('Tags','structural'), $tags_list );
 		}
 	}
 } 
@@ -415,7 +415,7 @@ if ( ! function_exists( 'structural_related_posts' ) ) :
 	        if($related_posts) {
 	        	foreach ($related_posts as $post) : setup_postdata($post); ?>
 		           	<li class="related_post">
-		           		<a class="entry-unrelated" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('recent-work'); ?></a>
+		           		<a class="entry-unrelated" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('structural-recent-work'); ?></a>
 		           		<a class="entry-unrelated" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 		           	</li>
 		        <?php endforeach; }
@@ -480,6 +480,12 @@ if( ! function_exists('structural_top_meta') ) {
 				</span>  
 				<?php structural_comments_meta(); ?> 
 				<?php structural_author(); ?>
+				<?php structural_edit();
+				/* translators: used between list items, there is a space after the comma */
+				$categories_list = get_the_category_list( __( ', ', 'structural' ) ); 
+				if ( $categories_list ) {
+					printf( '<span class="cat-links"><i class="fa fa-folder-open"></i> ' . __( '%1$s ', 'structural' ) . '</span>', $categories_list );
+				} ?>
 			</div><!-- .entry-meta --><?php
 		}
 	}
@@ -511,72 +517,74 @@ if( ! function_exists ( 'structural_add_service_section' ) ) {
 		$service_section_icon_2 = esc_attr(get_theme_mod('service_section_icon_2'));
 		$service_section_icon_3 = esc_attr(get_theme_mod('service_section_icon_3'));
 
-		$service_section = get_theme_mod('service_section_status',true); ?>
-		<div class="container">
-			<main id="main" class="site-main" role="main">
-	<?php  if( $service_section && $service_section_title ) {
-			echo '<div class="section-head">';
-			echo '<h1 class="title-divider">' . get_the_title(absint($service_section_title)) . '</h1>';
-			$description = get_post_field('post_content',absint($service_section_title));
-			echo '<p class="sub-description">' . $description . '</p>';
-		    echo '</div>';
-		}
+		$service_section = get_theme_mod('service_section_status',true); 
+		if ( $service_section ) {  ?>
+			<div class="service-wrapper row">
+			    <div class="container">
+				   <?php  if( $service_section_title ) {
+							echo '<div class="section-head">';
+							echo '<h1 class="title-divider">' . get_the_title(absint($service_section_title)) . '</h1>';
+							$description = get_post_field('post_content',absint($service_section_title));
+							echo '<p class="sub-description">' . $description . '</p>';
+						    echo '</div>';
+						}
 
-		if( $service_section && ($service_page1 || $service_page2 || $service_page3 ) ){
-			$service_pages = array($service_page1,$service_page2,$service_page3);
-			$args = array(
-				'post_type' => 'page',
-				'post__in' => $service_pages,
-				'posts_per_page' => 3,
-				'orderby' => 'post__in'
-			);
-			$query = new WP_Query($args); 
-			if( $query->have_posts()) : ?>
-				<div class="services-wrapper clearfix">
-					<?php $i = 1;
-					while($query->have_posts()) :
-							$query->the_post(); ?>  
-							    <div class="one-third column service">
-							    	
-							    	    <?php if($i == 1):
-							    	      $icon_url =  $service_section_icon_1;
-							    	      elseif($i == 2):
-							    	       $icon_url =  $service_section_icon_2;
-							    	      elseif($i == 3):
-							    	       	$icon_url =  $service_section_icon_3;
-							    	      endif;
+					if( $service_page1 || $service_page2 || $service_page3 ){
+						$service_pages = array($service_page1,$service_page2,$service_page3);
+						$args = array(
+							'post_type' => 'page',
+							'post__in' => $service_pages,
+							'posts_per_page' => 3,
+							'orderby' => 'post__in'
+						);
+						$query = new WP_Query($args); 
+						if( $query->have_posts()) : ?>
+							<div class="services-wrapper clearfix">
+								<?php $i = 1;
+								while($query->have_posts()) :
+										$query->the_post(); ?>  
+										    <div class="one-third column service">
+										    	
+										    	    <?php if($i == 1):
+										    	      $icon_url =  $service_section_icon_1;
+										    	      elseif($i == 2):
+										    	       $icon_url =  $service_section_icon_2;
+										    	      elseif($i == 3):
+										    	       	$icon_url =  $service_section_icon_3;
+										    	      endif;
 
-						    	        if($icon_url): ?>
-						    	        <div class="icon-wrapper">
-						    	          	<i class="fa <?php echo $icon_url; ?>" ></i>
-										</div>
-						    	        <?php
-						    	        elseif( has_post_thumbnail() ) : ?>
-	                                        <a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php the_post_thumbnail('structural_recent_page_img'); ?></a><?php
-						    	        endif; ?>
-							    	
-							    	<div class="service-content">
-							    	    <?php the_title( sprintf( '<h4><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?>
-								    	<?php the_content( __( 'Read More', 'structural' ) );
-								    	wp_link_pages( array(
-											'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'structural' ),
-											'after'  => '</div>',
-										) ); ?>
-							    	</div>
-							    </div>
-							    <?php $i++;
-				    endwhile; ?>
+									    	        if($icon_url): ?>
+									    	        <div class="icon-wrapper">
+									    	          	<i class="fa <?php echo $icon_url; ?>" ></i>
+													</div>
+									    	        <?php
+									    	        elseif( has_post_thumbnail() ) : ?>
+				                                        <a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php the_post_thumbnail('structural_recent_page_img'); ?></a><?php
+									    	        endif; ?>
+										    	
+										    	<div class="service-content">
+										    	    <?php the_title( sprintf( '<h4><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?>
+											    	<?php the_content( __( 'Read More', 'structural' ) );
+											    	wp_link_pages( array(
+														'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'structural' ),
+														'after'  => '</div>',
+													) ); ?>
+										    	</div>
+										    </div>
+										    <?php $i++;
+							    endwhile; ?>
+							</div>
+
+						<?php endif; ?>   
+						<?php  
+							$query = null;
+							$args = null;
+							wp_reset_postdata(); 
+					}?>
 				</div>
-
-			<?php endif; ?>   
-			<?php  
-				$query = null;
-				$args = null;
-				wp_reset_postdata(); 
-		}?>
-		</main>
-		</div>
-	<?php }
+			</div>
+		<?php }
+	}
 }
 
 

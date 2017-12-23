@@ -54,9 +54,8 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 			
 		}
     endif; ?>
-    <div id="content" class="site-content">
-   		<?php do_action( 'structural_after_slider_part' );?>
-   	</div>
+   	<?php do_action( 'structural_after_slider_part' );?>
+
    	<?php
 
 	if( get_theme_mod('enable_recent_post_service',true) ) :
@@ -65,7 +64,7 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 	    do_action('structural_recent_post_after');
     endif;
 
-    if( get_theme_mod('enable_home_default_content',false ) ) {   ?>
+    if( get_theme_mod('page_content_status',false ) ) {   ?>
 		<div id="content" class="site-content">
 			<div class="container">
 				<main id="main" class="site-main" role="main"><?php

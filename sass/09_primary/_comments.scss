@@ -25,7 +25,6 @@ ol.comment-list {
 	list-style-type: none;
 	margin-bottom:30px;
 	border:1px solid $c3;
-	background:$secondary;
 }
 
 ol.comment-list ol.children {
@@ -70,7 +69,6 @@ ol.comment-list .reply {
 .comment-author {
 	display: inline;
 	text-transform: uppercase;
-	color: $white;
 
 	 img {
 		position: absolute;
@@ -102,9 +100,6 @@ ol.comment-list article {
 		font-family:$heading_font;
 		cursor: pointer;
 	}
-	p {
-		color:$white;
-	}
 }
 
 
@@ -123,7 +118,7 @@ ol.comment-list li.byuser {
 	}
 
 	.comment-metadata a:hover {
-		color: $white;
+		color: $primary;
 	}
 }
 .comment-meta .edit-link {
@@ -131,7 +126,6 @@ ol.comment-list li.byuser {
 	right:0;
 	top:-4px;
 	a {
-		color: $white;
 		padding: 5px 12px;
 		//border-radius: 3px;
 		&:hover {
@@ -146,8 +140,9 @@ ol.comment-list li.byuser {
 	margin-bottom: 10px;
 	display: inline-block;
 	padding-left: 20px;
+	color:$secondary;
 	a {
-		color:$primary;
+		color:$secondary;
 	}
 }
 

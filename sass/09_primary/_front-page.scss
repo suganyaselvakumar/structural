@@ -3,7 +3,7 @@
     border-bottom: none;
   }
   .site-main {
-    margin-bottom:100px;
+    margin-top:0px;
   }
   .home-divider {
     display: block;
@@ -16,7 +16,9 @@
 }
 
 /* Service Section */
-
+.service-wrapper {
+  padding:100px 0px 55px;
+}
 .section-head {
    margin-bottom:70px;
   h1 {
@@ -127,7 +129,7 @@
 /* Recent Post section */
 
 .post-wrapper {
-   padding: 0px 0px 70px;
+   padding: 100px 0px 70px;
     .latest-posts {
       .one-third:nth-child(3n+1) {
           clear: both;

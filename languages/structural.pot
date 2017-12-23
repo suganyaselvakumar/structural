@@ -36,7 +36,7 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:35, comments.php:52
+#: comments.php:35, comments.php:53
 msgid "Comment navigation"
 msgstr ""
 
@@ -44,35 +44,35 @@ msgstr ""
 msgid " Previous Comments"
 msgstr ""
 
-#: comments.php:37, comments.php:54
+#: comments.php:37, comments.php:55
 msgid "Next Comments"
 msgstr ""
 
-#: comments.php:53
+#: comments.php:54
 msgid "Previous Comments"
 msgstr ""
 
-#: comments.php:64
+#: comments.php:65
 msgid "Comments are closed."
 msgstr ""
 
-#: comments.php:73
+#: comments.php:74
 msgid "Post Comments"
 msgstr ""
 
-#: comments.php:75
+#: comments.php:76
 msgid "Leave a Comment"
 msgstr ""
 
-#: comments.php:83
+#: comments.php:84
 msgid "Name"
 msgstr ""
 
-#: comments.php:88
+#: comments.php:89
 msgid "Email"
 msgstr ""
 
-#: comments.php:93
+#: comments.php:94
 msgid "Website"
 msgstr ""
 
@@ -84,11 +84,11 @@ msgstr ""
 msgid "Theme: Structural by <a href=\"%1$s\" target=\"_blank\" rel=\"designer\">Webulous Themes</a></p>"
 msgstr ""
 
-#: front-page.php:38, includes/template-tags.php:454, includes/template-tags.php:560, template-parts/content-single.php:40, template-parts/content.php:45
+#: front-page.php:38, includes/template-tags.php:454, includes/template-tags.php:567, template-parts/content-single.php:40, template-parts/content.php:45
 msgid "Read More"
 msgstr ""
 
-#: front-page.php:40, front-page.php:75, includes/template-tags.php:155, includes/template-tags.php:562, includes/template-tags.php:634, template-parts/content-single.php:50, template-parts/content.php:55
+#: front-page.php:40, front-page.php:74, includes/template-tags.php:155, includes/template-tags.php:569, includes/template-tags.php:642, template-parts/content-single.php:50, template-parts/content.php:55
 msgid "Pages: "
 msgstr ""
 
@@ -96,81 +96,101 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:133
-msgid "<div class=\"seven columns\"><i class=\"fa fa-phone\"></i>1-775-97-377<span>info@mail.com</span></div><div class=\"nine columns right\"><i class=\"fa fa-home\"></i>14 Tottenham Court Road<span>London, England.</span></div>"
+#: functions.php:109
+msgid "Mon - Sat:09.00-18.00"
 msgstr ""
 
-#: functions.php:145
+#: functions.php:109, functions.php:134, functions.php:161
+msgid "example.com"
+msgstr ""
+
+#: functions.php:134
+msgid "14 Tottenham Court Road"
+msgstr ""
+
+#: functions.php:134
+msgid "London, England."
+msgstr ""
+
+#: functions.php:146
 msgid "<h4 class=\"widget-title\">Structural</h4>Structure personal participate in ethics training as part of our best practices program and each employee is provided with a skillset that help them makes the best decisions."
 msgstr ""
 
-#: functions.php:160
-msgid "<h4 class=\"widget-title\">Contact Details</h4><ul><li>14 Tottenham Court Road, London, English</li><li>(102) 6666 8888</li><li>info@zooka.io</li><li>(102) 8888 9999</li><li>Mon - Sat: 9:00 - 18:00</li></ul>"
+#: functions.php:161
+msgid "Contact Details"
 msgstr ""
 
-#: functions.php:176
-msgid "Post One"
+#: functions.php:161
+msgid "14 Tottenham Court Road, London, English"
+msgstr ""
+
+#: functions.php:161
+msgid "Mon - Sat: 9:00 - 18:00"
 msgstr ""
 
 #: functions.php:177
+msgid "Post One"
+msgstr ""
+
+#: functions.php:178
 msgid "<h1>Construction Services</h1>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.<p><a href=\"#\">Buy Theme for $39</a></p>"
 msgstr ""
 
-#: functions.php:182
+#: functions.php:183
 msgid "Post Two"
 msgstr ""
 
-#: functions.php:183
+#: functions.php:184
 msgid "<h1>Construction Services</h1> Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.<p><a href=\"#\">Buy Theme for $39</a></p>"
 msgstr ""
 
-#: functions.php:188
+#: functions.php:189
 msgid "Professional Services"
 msgstr ""
 
-#: functions.php:189
+#: functions.php:190
 msgid "We are leading project management and building contractor based in world"
 msgstr ""
 
-#: functions.php:193
+#: functions.php:194
 msgid "Construction"
 msgstr ""
 
-#: functions.php:194
+#: functions.php:195
 msgid ""
 "Structure has the resources and Knowledge to undertake just about any job.\n"
 "	            	<p><a href=\"#\">Read More</a></p>"
 msgstr ""
 
-#: functions.php:200
+#: functions.php:201
 msgid "Engineering"
 msgstr ""
 
-#: functions.php:201
+#: functions.php:202
 msgid ""
 "We rely on advanced technology to deliver Constrcution Projects and Engineering.\n"
 "					<p><a href=\"#\">Read More</a></p>"
 msgstr ""
 
-#: functions.php:207
+#: functions.php:208
 msgid "Procurement"
 msgstr ""
 
-#: functions.php:208
+#: functions.php:209
 msgid ""
 "Our supply chain Organization provides our customers with global procurement\n"
 "					<p><a href=\"#\">Read More</a></p>"
 msgstr ""
 
-#: functions.php:214
+#: functions.php:215
 msgid "Constrction Image"
 msgstr ""
 
-#: functions.php:219
+#: functions.php:220
 msgid "We believe in the Power of Great ideas"
 msgstr ""
 
-#: functions.php:220
+#: functions.php:221
 msgid ""
 "Structure personal participate in ethics training as part of our best practices program and each employee is provided with a skillset that help them makes the best decisions.\n"
 "					<ul><li><i class=\"fa fa-check\"></i>We create tools</li>\n"
@@ -180,47 +200,47 @@ msgid ""
 "					</ul>"
 msgstr ""
 
-#: functions.php:230
+#: functions.php:231
 msgid "Blog & Latest News"
 msgstr ""
 
-#: functions.php:231
+#: functions.php:232
 msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
 msgstr ""
 
-#: functions.php:239
+#: functions.php:240
 msgid "slider one"
 msgstr ""
 
-#: functions.php:243, functions.php:247, functions.php:251
+#: functions.php:244, functions.php:248, functions.php:252
 msgid "Page Images"
 msgstr ""
 
-#: functions.php:297
+#: functions.php:298
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:306
+#: functions.php:307
 msgid "Top Left"
 msgstr ""
 
-#: functions.php:315
+#: functions.php:316
 msgid "Top Right"
 msgstr ""
 
-#: functions.php:324
+#: functions.php:325
 msgid "Header Right"
 msgstr ""
 
-#: functions.php:333
+#: functions.php:334
 msgid "Footer %d"
 msgstr ""
 
-#: functions.php:343
+#: functions.php:344
 msgid "Footer Nav"
 msgstr ""
 
-#: functions.php:422, functions.php:435
+#: functions.php:423, functions.php:436
 msgid "Demo Import"
 msgstr ""
 
@@ -622,11 +642,11 @@ msgstr ""
 msgid "Inline picker"
 msgstr ""
 
-#: includes/custom-header.php:98
+#: includes/custom-header.php:94
 msgid "Play background video"
 msgstr ""
 
-#: includes/custom-header.php:99
+#: includes/custom-header.php:95
 msgid "Pause background video"
 msgstr ""
 
@@ -851,8 +871,12 @@ msgstr ""
 msgid "Support for %s WordPress theme is conducted through Webulous free support ticket system."
 msgstr ""
 
+#: includes/options-config.php:211
+msgid "Theme screenshot"
+msgstr ""
+
 #: includes/options-config.php:220
-msgid "After Install recommended & required plugins."
+msgid "Install required & recommended plugins."
 msgstr ""
 
 #: includes/options-config.php:223
@@ -1063,127 +1087,119 @@ msgstr ""
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: includes/options-config.php:496
-msgid " Show Comments"
-msgstr ""
-
-#: includes/options-config.php:497
-msgid "Show Comments"
-msgstr ""
-
-#: includes/options-config.php:508
+#: includes/options-config.php:501
 msgid " Home Options"
 msgstr ""
 
-#: includes/options-config.php:509
+#: includes/options-config.php:502
 msgid " Select Front page display as a static front page in order to visible the following sections"
 msgstr ""
 
-#: includes/options-config.php:512
+#: includes/options-config.php:505
 msgid "Section: Slider"
 msgstr ""
 
-#: includes/options-config.php:516
+#: includes/options-config.php:509
 msgid "Enable Home Page Slider Section"
 msgstr ""
 
-#: includes/options-config.php:522
+#: includes/options-config.php:515
 msgid "Slider Posts Category"
 msgstr ""
 
-#: includes/options-config.php:527
+#: includes/options-config.php:520
 msgid "No. of Sliders"
 msgstr ""
 
-#: includes/options-config.php:534
+#: includes/options-config.php:527
 msgid "Section: Service"
 msgstr ""
 
-#: includes/options-config.php:535, includes/options-config.php:600
+#: includes/options-config.php:528, includes/options-config.php:593
 msgid " Select Front page display as a static front page in orde to visible this section, Service related options"
 msgstr ""
 
-#: includes/options-config.php:539, includes/options-config.php:604
+#: includes/options-config.php:532, includes/options-config.php:597
 msgid "Check this box to Show this section"
 msgstr ""
 
-#: includes/options-config.php:545, includes/options-config.php:610, includes/options-config.php:639
+#: includes/options-config.php:538, includes/options-config.php:603, includes/options-config.php:632
 msgid "Section Title & Description"
 msgstr ""
 
-#: includes/options-config.php:549
+#: includes/options-config.php:542
 msgid "Choose Service Section Icons #1"
 msgstr ""
 
-#: includes/options-config.php:554
+#: includes/options-config.php:547
 msgid "Service #1 Color"
 msgstr ""
 
-#: includes/options-config.php:560
+#: includes/options-config.php:553
 msgid "Service Section #1"
 msgstr ""
 
-#: includes/options-config.php:565
+#: includes/options-config.php:558
 msgid "Choose Service Section Icons #2"
 msgstr ""
 
-#: includes/options-config.php:570
+#: includes/options-config.php:563
 msgid "Service #2 Color"
 msgstr ""
 
-#: includes/options-config.php:576
+#: includes/options-config.php:569
 msgid "Service Section #2"
 msgstr ""
 
-#: includes/options-config.php:581
+#: includes/options-config.php:574
 msgid "Choose Service Section Icons #3"
 msgstr ""
 
-#: includes/options-config.php:586
+#: includes/options-config.php:579
 msgid "Service #3 Color"
 msgstr ""
 
-#: includes/options-config.php:592
+#: includes/options-config.php:585
 msgid "Service Section #3"
 msgstr ""
 
-#: includes/options-config.php:599
+#: includes/options-config.php:592
 msgid "Section: Image Content"
 msgstr ""
 
-#: includes/options-config.php:615
+#: includes/options-config.php:608
 msgid "Image content Section #1"
 msgstr ""
 
-#: includes/options-config.php:620
+#: includes/options-config.php:613
 msgid "Image content Section #2"
 msgstr ""
 
-#: includes/options-config.php:627
+#: includes/options-config.php:620
 msgid "Recent Blog"
 msgstr ""
 
-#: includes/options-config.php:628, includes/options-config.php:652
+#: includes/options-config.php:621, includes/options-config.php:645
 msgid "Default Page content related option"
 msgstr ""
 
-#: includes/options-config.php:632
+#: includes/options-config.php:625
 msgid "Enable Home Page Recent Post Section"
 msgstr ""
 
-#: includes/options-config.php:633
+#: includes/options-config.php:626
 msgid "Enable recent post section in home page"
 msgstr ""
 
-#: includes/options-config.php:644
+#: includes/options-config.php:637
 msgid "No. of Recent Posts"
 msgstr ""
 
-#: includes/options-config.php:651
+#: includes/options-config.php:644
 msgid "Page Content"
 msgstr ""
 
-#: includes/options-config.php:656
+#: includes/options-config.php:649
 msgid "Check this box to Show page content"
 msgstr ""
 
@@ -1202,12 +1218,16 @@ msgid "Next Post&nbsp;"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
-#: includes/template-tags.php:47
+#: includes/template-tags.php:47, includes/template-tags.php:485
 msgid ", "
 msgstr ""
 
 #: includes/template-tags.php:49
-msgid "%1$s "
+msgid "%2$s "
+msgstr ""
+
+#: includes/template-tags.php:49
+msgid "Tags"
 msgstr ""
 
 #: includes/template-tags.php:183
@@ -1283,11 +1303,15 @@ msgstr ""
 msgid "No Related Posts Yet!"
 msgstr ""
 
-#: includes/template-tags.php:495
+#: includes/template-tags.php:487
+msgid "%1$s "
+msgstr ""
+
+#: includes/template-tags.php:501
 msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
 msgstr ""
 
-#: includes/template-tags.php:496
+#: includes/template-tags.php:502
 msgid "Get started with Structural"
 msgstr ""
 

@@ -208,7 +208,7 @@ function structural_display_upgrade() {
                     </div>  
 
                     <div class="theme_info_right">
-                        <img src="<?php echo get_template_directory_uri(); ?>/screenshot.png" alt="Theme Screenshot" />
+                        <?php echo sprintf ( '<img src="'. get_template_directory_uri() .'/screenshot.png" alt="%1$s" />',__('Theme screenshot','structural') ); ?>
                     </div>
                 </div>
             </div>
@@ -490,13 +490,6 @@ function structural_display_upgrade() {
                                 ),
                                'default' => '1', 
                                'sanitize_callback' => 'absint',    
-                            ),
-                            'comments' => array(
-                                'type' => 'checkbox',
-                                'label' => __(' Show Comments', 'structural'),
-                                'description' => __('Show Comments', 'structural'),
-                                'default' => 1,  
-                                'sanitize_callback' => 'structural_boolean',
                             ),
 						),
 					),

@@ -43,7 +43,7 @@ function structural_customizer_service_color() {
 		}
 		if( get_theme_mod('service_color_'.$i,$bg_color) ) {
 				
-			$service_color = esc_html(get_theme_mod( 'service_color_'.$i,$bg_color));  ?>
+			$service_color = sanitize_hex_color(get_theme_mod( 'service_color_'.$i,$bg_color));  ?>
 			
 			<style type="text/css">
 				.services-wrapper .service:nth-of-type(<?php echo $i; ?>) .service-content:hover h4 a	
