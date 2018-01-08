@@ -1085,7 +1085,8 @@ object {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  width: 100%; }
+  width: 100%;
+  padding: 0 1.14007% 2.28013%; }
 
 .gallery-columns-2 .gallery-item {
   max-width: 50%; }
@@ -1188,6 +1189,9 @@ object {
   display: block; }
 
 
+.branding .site-branding.center {
+  text-align: center; }
+
 .branding .site-branding {
   text-align: right;
   position: relative;
@@ -1211,6 +1215,23 @@ object {
       color: #131e32; }
     .branding .site-branding .site-title a:hover {
       color: #ffb500; }
+
+.has-header-video {
+  padding: 0px; }
+  .has-header-video .branding {
+    bottom: -50px;
+    display: block;
+    right: 0;
+    height: auto;
+    padding-top: 0;
+    position: absolute;
+    width: 100%; }
+    .has-header-video .branding .site-title a {
+      color: white; }
+    .has-header-video .branding .header-right .seven.columns, .has-header-video .branding .header-right .nine.columns {
+      color: white; }
+      .has-header-video .branding .header-right .seven.columns i, .has-header-video .branding .header-right .seven.columns span, .has-header-video .branding .header-right .nine.columns i, .has-header-video .branding .header-right .nine.columns span {
+        color: white; }
 
 .sticky-nav {
   position: fixed;

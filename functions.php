@@ -47,6 +47,9 @@ function structural_setup() {
 		'primary' => __( 'Primary Menu', 'structural' ),
 	) );
 
+	add_theme_support( 'post-formats', array(
+		'aside', 'image', 'video', 'quote', 'link',
+	) );
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.

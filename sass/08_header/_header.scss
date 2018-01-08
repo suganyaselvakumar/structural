@@ -1,7 +1,9 @@
 
 .branding {     
 	
-
+  .site-branding.center {
+    text-align:center;
+  }
 	.site-branding {
 		text-align: left;
 		position: relative;
@@ -32,6 +34,30 @@
 		}	
 
 	}
+}
+
+.has-header-video {
+  padding:0px;
+  .branding {
+    bottom: -50px;
+    display: block;
+    left: 0;
+    height: auto;
+    padding-top: 0;
+    position: absolute;
+    width: 100%;
+    .site-title a {
+      color:white;
+    }
+    .header-right {
+      .seven.columns,.nine.columns {
+        color:white;
+        i,span {
+          color:white;
+        }
+      }
+    }
+  }
 }
 
 .sticky-nav {

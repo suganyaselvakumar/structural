@@ -263,22 +263,12 @@ if( ! function_exists('structural_recent_posts') ) {
 					echo $cats;
 					if ($showCurrent == 1) echo $before . get_the_title() . $after;
 				}
-
+ 
 			} elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
 				$post_type = get_post_type_object(get_post_type());
 				echo $before . $post_type->labels->singular_name . $after;
 
-			} elseif ( is_attachment() ) {
-				$parent = get_post($post->post_parent);
-				$cat = get_the_category($parent->ID); $cat = $cat[0];
-				$cats = get_category_parents($cat, TRUE, $delimiter);
-				$cats = str_replace('<a', $linkBefore . '<a' . $linkAttr, $cats);
-				$cats = str_replace('</a>', '</a>' . $linkAfter, $cats);
-				echo $cats;
-				printf($link, get_permalink($parent), $parent->post_title);
-				if ($showCurrent == 1) echo $delimiter . $before . get_the_title() . $after;
-
-			} elseif ( is_page() && !$post->post_parent ) {
+			}  elseif ( is_page() && !$post->post_parent ) {
 				if ($showCurrent == 1) echo $before . get_the_title() . $after;
 
 			} elseif ( is_page() && $post->post_parent ) {

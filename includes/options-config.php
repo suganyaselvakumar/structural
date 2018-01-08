@@ -179,8 +179,19 @@ function structural_display_upgrade() {
 	    </h2>      
 
         <?php if ( is_null( $tab ) ) { ?>
-            <div class="theme_info info-tab-content">
+            <div class="theme_info info-tab-content"> 
                 <div class="theme_info_column clearfix">
+                	<div id="webulous-create-web">
+						<div id="webulous-mode-wrap">
+						    <h3>New to Creating a Website?</h3> 
+						    <p>We will build you a complete website based on the theme you selected. We will populate content, change colors and do any look and feel customisation work you prefer.</p>
+						</div>
+						<div class="image-wrap">
+							<a href="https://www.webulousthemes.com/checkout?edd_action=add_to_cart&download_id=23052" target="_blank">
+							<?php echo sprintf ( '<img src="'. get_template_directory_uri() .'/images/api.png" alt="%1$s" />',__('Image','structural') ); ?>
+							</a>
+						</div>
+					</div>
                     <div class="theme_info_left">
                         <div class="theme_link">
                             <h3><?php esc_html_e( 'Theme Customizer', 'structural' ); ?></h3>
@@ -216,7 +227,8 @@ function structural_display_upgrade() {
 
          <?php if ( $tab == 'one_click_demo' ) { ?>
             <div class="one-click-demo-tab info-tab-content">
-				<div class="wrap clearfix"><?php
+				<div class="wrap clearfix">
+					<?php
 				    _e('Install required & recommended plugins.','structural');
 				    include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 				    if ( is_plugin_active( 'one-click-demo-import/one-click-demo-import.php' ) ) {							
@@ -227,7 +239,8 @@ function structural_display_upgrade() {
 		} ?> 
 
         <?php if ( $tab == 'pro_features' ) { ?>
-            <div class="pro-features-tab info-tab-content"><?php
+            <div class="pro-features-tab info-tab-content">
+            <?php
 			    global $structural_why_upgrade; ?>
 				<div class="wrap clearfix">
 				    <?php echo $structural_why_upgrade; ?>

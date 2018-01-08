@@ -21,7 +21,6 @@ if ( is_singular() && pings_open() ) { ?>
 <body <?php body_class(); ?>>  
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'structural' ); ?></a>
-	<?php do_action('structural_before_header'); ?>
 	<header id="masthead" class="site-header" role="banner">   
 			<?php if( is_active_sidebar( 'top-left' )  || is_active_sidebar( 'top-right' ) ): ?>
 				<div class="top-nav">
@@ -41,8 +40,10 @@ if ( is_singular() && pings_open() ) { ?>
 				</div> <!-- .top-nav -->
 			<?php endif;?>
 			
+	<?php do_action('structural_before_header'); ?>
 			<div class="branding header-image">
 				<div class="container">
+				<?php if( is_active_sidebar( 'header-right' ) ){ ?>
 					<div class="seven columns">
 						<div class="site-branding">
 							<?php 
@@ -58,14 +59,29 @@ if ( is_singular() && pings_open() ) { ?>
 							<?php endif; ?>
 						</div><!-- .site-branding -->
 					</div>
-					
-			
 					<div class="nine columns">
 						<div class="header-right clearfix">
 							<?php dynamic_sidebar('header-right' ); ?>  
 						</div>
 					</div>
-					
+				<?php }
+				else {?>
+					<div class="sixteen columns">
+						<div class="site-branding center">
+							<?php 
+								$logo_title = get_theme_mod( 'logo_title' );   
+								$tagline = get_theme_mod( 'tagline',true);
+								if( $logo_title ) :
+	                                the_custom_logo();     
+	                            else : ?>
+									<h3 class="site-title"><a style="color: #<?php header_textcolor(); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
+							<?php endif; ?>
+							<?php if( $tagline ) : ?>
+									<p class="site-description" style="color: #<?php header_textcolor(); ?>"><?php bloginfo( 'description' ); ?></p>
+							<?php endif; ?>
+						</div><!-- .site-branding -->
+					</div>
+				<?php } ?>
 				</div>
 			</div>
 			<div class="nav-wrap">

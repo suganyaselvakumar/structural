@@ -310,16 +310,6 @@ blockquote,q {
 		.entry-meta {
 			text-transform:uppercase;
 			span {
-				position:relative;
-				
-				&:after {
-					position:absolute;
-					content:"-";
-					font-size:17px;
-					top:auto;
-					left:auto;
-					
-				}
 				a {
 					color:$c3;
 					font-size: 14px;

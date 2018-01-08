@@ -43,7 +43,7 @@ function structural_theme_font_url($font) {
 }
 
 function structural_admin_enqueue_scripts( $hook ) {  
-	if( strpos($hook, 'structural_upgrade') ) {
+	//if( strpos($hook, 'structural_upgrade') ) {
 		wp_enqueue_style( 
 			'font-awesome', 
 			get_template_directory_uri() . '/css/font-awesome.min.css', 
@@ -58,7 +58,7 @@ function structural_admin_enqueue_scripts( $hook ) {
 			'1.0.0', 
 			'all' 
 		);
-	}   
+	//}   
 	wp_enqueue_script( 
 		'structural-customizer-script', 
 		get_template_directory_uri() . '/js/admin-custom.js',

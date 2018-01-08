@@ -77,6 +77,7 @@ function structural_header_style() {
 				      height: 100vh;
 				      width: 100vw;
 				      overflow: hidden;
+				      object-fit: cover;
 				}
 
 		    </style><?php
