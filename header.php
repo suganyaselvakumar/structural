@@ -15,35 +15,45 @@
 if ( is_singular() && pings_open() ) { ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"><?php
 } ?>
-<?php wp_head(); ?>
+<?php wp_head();  
+?>
 </head>
   
 <body <?php body_class(); ?>>  
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'structural' ); ?></a>
 	<header id="masthead" class="site-header" role="banner">   
-			<?php if( is_active_sidebar( 'top-left' )  || is_active_sidebar( 'top-right' ) ): ?>
+			<?php if( is_active_sidebar( 'top-left' )  || is_active_sidebar( 'top-right' ) || is_customize_preview() ) { ?>
 				<div class="top-nav">
 					<div class="container">		
 						<div class="ten columns">
 							<div class="cart-left">
-								<?php dynamic_sidebar('top-left' ); ?>
+								<?php if(dynamic_sidebar('top-left' )) {
+									} elseif (is_customize_preview()) { ?>
+										<div class="dummy-content-left">
+											Click Here to edit the Top-Left Content.
+										</div>
+								<?php } else {} ?>
 							</div>
 						</div>
 		
 						<div class="six columns">
 							<div class="cart-right">
-								<?php dynamic_sidebar('top-right' ); ?>  
+								<?php if( dynamic_sidebar('top-right' )) { 
+								} elseif (is_customize_preview()) { ?> 
+									<div class="dummy-content-right">
+										Click Here to edit the Top-Right Content.
+									</div>
+								<?php } else {} ?>  
 							</div>
 						</div>
 					</div>
 				</div> <!-- .top-nav -->
-			<?php endif;?>
-			
+			<?php } ?>
 	<?php do_action('structural_before_header'); ?>
 			<div class="branding header-image">
 				<div class="container">
-				<?php if( is_active_sidebar( 'header-right' ) ){ ?>
+				<?php if( is_active_sidebar( 'header-right' ) || is_customize_preview() ) { ?>
 					<div class="seven columns">
 						<div class="site-branding">
 							<?php 
@@ -59,9 +69,15 @@ if ( is_singular() && pings_open() ) { ?>
 							<?php endif; ?>
 						</div><!-- .site-branding -->
 					</div>
+					
 					<div class="nine columns">
 						<div class="header-right clearfix">
-							<?php dynamic_sidebar('header-right' ); ?>  
+							<?php if( dynamic_sidebar('header-right' )) { 
+								} elseif (is_customize_preview()) { ?> 
+									<div class="dummy-header-right">
+										Click Here to edit the header-Right Content.
+									</div>
+							<?php } else {} ?>  
 						</div>
 					</div>
 				<?php }
@@ -82,7 +98,7 @@ if ( is_singular() && pings_open() ) { ?>
 						</div><!-- .site-branding -->
 					</div>
 				<?php } ?>
-				</div>
+				</div> 
 			</div>
 			<div class="nav-wrap">
 				<div class="container">

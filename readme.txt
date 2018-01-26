@@ -2,8 +2,8 @@
 Contributors: Webulous
 Tags: blog, news, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, translation-ready, theme-options, rtl-language-support
 Requires at least: 4.0
-Tested up to: 4.9.1
-Stable tag: 1.0.8
+Tested up to: 4.9.2
+Stable tag: 1.0.9
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
   
@@ -46,6 +46,11 @@ Enable/Disable featured images visibility.
 
 == Changelog ==
 
+= 1.0.9 =
+ * BreadCrumb Background image and Color option added.
+ * One Click demo Import and Starter content issues are fixed.
+ * Customizer Selective Refresh button added. 
+
 = 1.0.8 =
  * Added site Creation Ads in Theme Upgrade Page.
 
@@ -54,8 +59,10 @@ Enable/Disable featured images visibility.
 
 == Upgrade Notice ==
 
-= 1.0.8 =
- * Added site Creation Ads in Theme Upgrade Page.
+= 1.0.9 =
+ * BreadCrumb Background image and Color option added.
+ * One Click demo Import and Starter content issues are fixed.
+ * Customizer Selective Refresh button added. 
 
 Structural WordPress Theme bundles the following third-party resources:
 == Resources ==

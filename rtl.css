@@ -1202,7 +1202,7 @@ object {
     font-size: 1.4rem;
     color: #8f8f8f;
     font-family: "Open Sans", sans-serif;
-    padding: 0px 0px 10px 10px;
+    padding: 10px 0px 0px;
     position: relative;
     margin-bottom: 0;
     margin-top: -12px; }
@@ -1778,25 +1778,17 @@ blockquote, q {
 
 .search article .entry-meta {
   text-transform: uppercase; }
-  .search article .entry-meta span {
-    position: relative; }
-    .search article .entry-meta span:after {
-      position: absolute;
-      content: "-";
-      font-size: 17px;
-      top: auto;
-      right: auto; }
-    .search article .entry-meta span a {
-      color: #8f8f8f;
-      font-size: 14px;
-      padding-left: 30px; }
-      .search article .entry-meta span a:hover {
-        color: #ffb500; }
-    .search article .entry-meta span i {
-      font-size: 14px;
-      margin-left: 8px; }
-    .search article .entry-meta span:last-child:after {
-      display: none; }
+  .search article .entry-meta span a {
+    color: #8f8f8f;
+    font-size: 14px;
+    padding-left: 30px; }
+    .search article .entry-meta span a:hover {
+      color: #ffb500; }
+  .search article .entry-meta span i {
+    font-size: 14px;
+    margin-left: 8px; }
+  .search article .entry-meta span:last-child:after {
+    display: none; }
   .search article .entry-meta .cat-links a {
     padding-left: 0px; }
   .search article .entry-meta .author a {
@@ -1931,6 +1923,8 @@ blockquote, q {
     .post-wrapper .latest-posts .latest-post-details .latest-post-content {
       margin: 10px 0 30px;
       text-align: justify; }
+      .post-wrapper .latest-posts .latest-post-details .latest-post-content h1, .post-wrapper .latest-posts .latest-post-details .latest-post-content h2, .post-wrapper .latest-posts .latest-post-details .latest-post-content h3, .post-wrapper .latest-posts .latest-post-details .latest-post-content h4, .post-wrapper .latest-posts .latest-post-details .latest-post-content h5, .post-wrapper .latest-posts .latest-post-details .latest-post-content h6 {
+        line-height: normal; }
     .post-wrapper .latest-posts .latest-post-details .btn-readmore {
       display: inline-block;
       padding: 20px 20px 0px 0px;

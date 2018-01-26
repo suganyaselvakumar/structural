@@ -263,6 +263,10 @@ a[href="themes.php?page=structural_upgrade"] {
   top:30px;
   right:35px;
 }
+#webulous-create-web a {
+  text-decoration: none;
+  box-shadow: none;
+}
 #webulous-create-web h3 {
   margin-bottom: 15px;
   font-size: 30px;
@@ -282,5 +286,12 @@ a[href="themes.php?page=structural_upgrade"] {
     font-size: 2.2rem;
   }
 }
-      
+ 
+/* One click demo plugin code */
+
+.ocdi__intro-notice.notice.notice-warning.is-dismissible {
+  display:none !important;
+}     
+
+
 /*# sourceMappingURL=admin.css.map */

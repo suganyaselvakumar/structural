@@ -159,15 +159,15 @@ function structural_display_upgrade() {
         $tab = null;
     } 
      
-    $pro_theme_url = 'https://webulousthemes.com/theme/structural-pro/';
+    $pro_theme_url = 'https://www.webulousthemes.com/theme/structural-pro/';
     $doc_url  = 'https://www.webulousthemes.com/structural-free';
-    $support_url = 'https://webulousthemes.com/free-support-request/';   
+    $support_url = 'https://www.webulousthemes.com/free-support-request/';   
     
     $current_action_link =  admin_url( 'themes.php?page=structural_upgrade&tab=pro_features' ); ?>
     <div class="structural-wrapper about-wrap">
         <h1><?php printf(esc_html__('Welcome to %1$s - Version %2$s', 'structural'), $theme_data->Name ,$theme_data->Version ); ?></h1><?php
        	printf( __('<div class="about-text"> Structural is a constrcution based theme. It is an attractive, modern, easy to use and responsive WordPress theme with colorful design and stunning flexibility. There is no theme options panel, instead uses Customizer, core feature of WordPress and comes with lots of options to customize. Some of the available options are awesome slider section, header options, footer options, layout design options, widget options and lots of other available options will allow you to create unique website as you want.</div>', 'structural') ); ?>
-        <a href="https://webulousthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>   
+        <a href="https://www.webulousthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>   
         <p class="upgrade-btn"><a class="upgrade" href="<?php echo esc_url($pro_theme_url); ?>" target="_blank"><?php printf( __( 'Buy %1s Pro - $39', 'structural'), $theme_data->Name ); ?></a></p>
 
 	   <h2 class="nav-tab-wrapper">
@@ -182,15 +182,15 @@ function structural_display_upgrade() {
             <div class="theme_info info-tab-content"> 
                 <div class="theme_info_column clearfix">
                 	<div id="webulous-create-web">
-						<div id="webulous-mode-wrap">
-						    <h3>New to Creating a Website?</h3> 
-						    <p>We will build you a complete website based on the theme you selected. We will populate content, change colors and do any look and feel customisation work you prefer.</p>
-						</div>
-						<div class="image-wrap">
-							<a href="https://www.webulousthemes.com/checkout?edd_action=add_to_cart&download_id=23052" target="_blank">
-							<?php echo sprintf ( '<img src="'. get_template_directory_uri() .'/images/api.png" alt="%1$s" />',__('Image','structural') ); ?>
-							</a>
-						</div>
+	                	<a href="https://www.webulousthemes.com/checkout?edd_action=add_to_cart&download_id=23052" target="_blank">
+							<div id="webulous-mode-wrap">
+							    <h3>New to Creating a Website?</h3> 
+							    <p>We will build you a complete website based on the theme you selected. We will populate content, change colors and do any look and feel customisation work you prefer.</p>
+							</div>
+							<div class="image-wrap">
+								<?php echo sprintf ( '<img src="'. get_template_directory_uri() .'/images/api.png" alt="%1$s" />',__('Image','structural') ); ?>
+							</div>
+						</a>
 					</div>
                     <div class="theme_info_left">
                         <div class="theme_link">
@@ -229,10 +229,14 @@ function structural_display_upgrade() {
             <div class="one-click-demo-tab info-tab-content">
 				<div class="wrap clearfix">
 					<?php
-				    _e('Install required & recommended plugins.','structural');
-				    include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-				    if ( is_plugin_active( 'one-click-demo-import/one-click-demo-import.php' ) ) {							
-                      printf( __('<a href="%1$s">Click here to install the demo</a>','structural'), admin_url('themes.php?page=pt-one-click-demo-import') ); 
+					include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
+					if ( is_plugin_installed('One Click Demo Import') != 1 ) {
+						printf(__('Install required plugin to import the demo content. <a href="%1$s"> Begin Installing Plugin</a>','structural'),admin_url('themes.php?page=tgmpa-install-plugins&plugin_status=install') );
+					} elseif ( is_plugin_active( 'one-click-demo-import/one-click-demo-import.php' ) ) {							
+                      	printf( __('<a href="%1$s"> Click here to install the demo</a>','structural'), admin_url('themes.php?page=pt-one-click-demo-import') ); 
+				    } else {
+				    	printf(__('Kindly activate the Required plugin to Import the demo content. <a href="%1$s"> Begin Activating Plugin</a>','structural'), admin_url('themes.php?page=tgmpa-install-plugins&plugin_status=activate') );
 				    } ?>
 				</div>
 			</div><?php   
@@ -386,25 +390,76 @@ function structural_display_upgrade() {
 								'sanitize_callback' => 'structural_breadcrumb_char_choices',
 								'default' => '1',
 							),
-							 'numeric_pagination' => array(
+							'breadcrumb_background_color' => array(   
+								'type' => 'color',
+								'label' => __('BreadCrumb Background Color', 'tech-literacy'),
+								'default' => '#27323d',
+								'sanitize_callback' => 'sanitize_hex_color',
+							),
+							'breadcrumb_background_image_status' => array(   
+								'type' => 'checkbox',
+								'label' => __('Enable BreadCrumb Background Image', 'tech-literacy'),
+								'default' => 1,
+								'sanitize_callback' => 'structural_boolean',
+							),
+							'breadcrumb_background_image' => array(   
+								'type' => 'image',
+								'label' => __('BreadCrumb Background Image', 'tech-literacy'),
+								'default' => get_template_directory_uri() . '/images/breadcrumb.png',
+							),
+							'breadcrumb_bg_size' => array (
+								'type' => 'select',
+								'label'    => __( 'BreadCrumb Background Size', 'picolog' ),
+								'choices' => array(
+							        'cover'   => 'Cover', 
+							        'contain' => 'Contain', 
+							        'auto'    => 'Auto', 
+							        'inherit' => 'Inherit', 
+							    ),
+							    'default' => 'cover',
+							),
+							'breadcrumb_bg_repeat' => array (
+								'type' => 'select',
+								'label'    => __( 'BreadCrumb Background Repeat', 'picolog' ),
+								'choices' => array(
+							        'no-repeat' => 'No Repeat',
+							        'repeat' => 'Repeat',
+							        'repeat-x' => 'Repeat Horizontally',
+							        'repeat-y' => 'Repeat Vertically', 
+							    ),
+							    'default' => 'repeat',
+							),
+							'breadcrumb_bg_position' => array (
+								'type' => 'select',
+								'label'    => __( 'BreadCrumb Background position', 'picolog' ),
+								'choices' => array(
+							        'center top' => 'Center Top',
+       								'center center' => 'Center Center',
+							        'center bottom' => 'Center Bottom',
+							        'left top' => 'Left Top',
+							        'left center' => 'Left Center',
+							        'left bottom' => 'Left Bottom',
+							        'right top' => 'Right Top',
+							        'right center' => 'Right Center',
+							        'right bottom' => 'Right Bottom',	
+							    ),
+							    'default' => 'center center',
+							),
+							'breadcrumb_bg_attachment' => array (
+								'type' => 'select',
+								'label'    => __( 'BreadCrumb Background attachment', 'picolog' ),
+								'choices' => array(
+							        'scroll' =>'Scroll',
+        							'fixed' =>'Fixed',
+							    ),
+							    'default' => 'fixed',
+							),
+							'numeric_pagination' => array(
                                 'type' => 'checkbox',
                                 'label' => __('Enable Numeric Page Navigation', 'structural'),
                                 'description' => __('Check to display numeric page navigation, instead of Previous Posts / Next Posts links.', 'structural'),
                                 'default' => 1, 
                                 'sanitize_callback' => 'structural_boolean', 
-                            ),
-                            'sidebar_position' => array(
-                                'type' => 'radio',
-                                'label' => __('Website Layout Options', 'structural'),
-                                'description' => __('Select main content and sidebar alignment.', 'structural'),
-                                'choices' => array(
-                                    'left' => __('Sidebar Left', 'structural'),
-                                    'right' => __('Sidebar Right', 'structural'),
-                                    'fullwidth' => __('Full Width', 'structural'),
-                                    'no-sidebar' => __('No Sidebar', 'structural'),
-                                ),
-                                'default' => 'right',  
-                                'sanitize_callback' => 'sanitize_text_field', 
                             ),
 						),
 					),
@@ -424,6 +479,24 @@ function structural_display_upgrade() {
 								'default' => 1,
 								'sanitize_callback' => 'structural_boolean',
 							),
+						),
+					),
+					'layout' => array(
+						'title' => __('Layout', 'structural'),
+						'fields' => array(
+                            'sidebar_position' => array(
+                                'type' => 'radio',
+                                'label' => __('Website Layout Options', 'structural'),
+                                'description' => __('Select main content and sidebar alignment.', 'structural'),
+                                'choices' => array(
+                                    'left' => __('Sidebar Left', 'structural'),
+                                    'right' => __('Sidebar Right', 'structural'),
+                                    'fullwidth' => __('Full Width', 'structural'),
+                                    'no-sidebar' => __('No Sidebar', 'structural'),
+                                ),
+                                'default' => 'right',  
+                                'sanitize_callback' => 'sanitize_text_field', 
+                            ),
 						),
 					),
 					'footer' => array(
@@ -533,6 +606,9 @@ function structural_display_upgrade() {
 								'label' => __('No. of Sliders', 'structural'),
 								'sanitize_callback' => 'absint',
 								'default' => 3,
+								'input_attrs' => array(
+						        	'class' => 'service1'
+						        )
 							),
 						),
 					),
@@ -554,6 +630,9 @@ function structural_display_upgrade() {
 								'type' => 'icons-picker',
 								'label' => __('Choose Service Section Icons #1', 'structural'),
 						        'sanitize_callback' => 'sanitize_text_field',
+						        'input_attrs' => array(
+						        	'class' => 'service1' 
+						        )
 							),
 							'service_color_1' => array( 
 								'type' => 'color', 

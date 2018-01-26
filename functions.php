@@ -106,10 +106,10 @@ function structural_setup() {
 				// Widget ID
 			    'my_text' => array(
 					// Widget $id -> set when creating a Widget Class
-		        	'text' , 
+		        	'custom_html' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'text'  => sprintf('<ul><li><i class="fa fa-phone"></i>(012)1234 5678</li><li><i class="fa fa-clock-o"></i>%1$s</li><li><i class="fa fa-envelope"></i>%2$s</li></ul>',__('Mon - Sat:09.00-18.00','structural'),__('example.com','structural'))
+					  'content'  => sprintf('<ul><li><i class="fa fa-phone"></i>(012)1234 5678</li><li><i class="fa fa-clock-o"></i>%1$s</li><li><i class="fa fa-envelope"></i>%2$s</li></ul>',__('Mon - Sat:09.00-18.00','structural'),__('example.com','structural'))
 					)
 				)
 			),
@@ -119,10 +119,10 @@ function structural_setup() {
 				// Widget ID
 			    'my_text' => array(
 					// Widget $id -> set when creating a Widget Class
-		        	'text' , 
+		        	'custom_html' , 
 		        	// Widget $instance -> settings 
 					array (
-					  'text'  => '<ul><li><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-skype"></i></a><a href="#"><i class="fa fa-envelope"></i></a><a href="#"><i class="fa fa-google"></i></a></li></ul>'
+					  'content'  => '<ul><li><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-skype"></i></a><a href="#"><i class="fa fa-envelope"></i></a><a href="#"><i class="fa fa-google"></i></a></li></ul>'
 					)
 				),
 			),
@@ -131,10 +131,10 @@ function structural_setup() {
 				// Widget ID
 			    'my_text' => array(
 					// Widget $id -> set when creating a Widget Class
-		        	'text' , 
+		        	'custom_html' , 
 		        	// Widget $instance -> settings 
 					array (
-						'text' => sprintf('<div class="seven columns"><i class="fa fa-phone"></i>1-775-97-377<span>%1$s</span></div><div class="nine columns right"><i class="fa fa-home"></i>%2$s<span>%3$s</span></div>',__('example.com','structural'),__('14 Tottenham Court Road','structural'),__( 'London, England.','structural'))
+						'content' => sprintf('<div class="seven columns"><i class="fa fa-phone"></i>1-775-97-377<span>%1$s</span></div><div class="nine columns right"><i class="fa fa-home"></i>%2$s<span>%3$s</span></div>',__('example.com','structural'),__('14 Tottenham Court Road','structural'),__( 'London, England.','structural'))
 					)
 				),
 			),
@@ -143,10 +143,10 @@ function structural_setup() {
 				// Widget ID
 			    'my_text' => array(
 					// Widget $id -> set when creating a Widget Class
-		        	'text' , 
+		        	'custom_html' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'text'  => __('<h4 class="widget-title">Structural</h4>Structure personal participate in ethics training as part of our best practices program and each employee is provided with a skillset that help them makes the best decisions.','structural'),
+					  'content'  => __('<h4 class="widget-title">Structural</h4>Structure personal participate in ethics training as part of our best practices program and each employee is provided with a skillset that help them makes the best decisions.','structural'),
 					)
 				)
 			),
@@ -158,10 +158,10 @@ function structural_setup() {
 				// Widget ID
 			    'my_text' => array(
 					// Widget $id -> set when creating a Widget Class
-		        	'text' , 
+		        	'custom_html' , 
 		        	// Widget $instance -> settings 
 					array( 
-					  'text' => sprintf('<h4 class="widget-title">%1$s</h4><ul><li>%2$s</li><li>(102) 6666 8888</li><li>%3$s</li><li>(102) 8888 9999</li><li>%4$s</li></ul>',__('Contact Details','structural'),__('14 Tottenham Court Road, London, English','structural'),__('example.com','structural'),__('Mon - Sat: 9:00 - 18:00','structural'))	
+					  'content' => sprintf('<h4 class="widget-title">%1$s</h4><ul><li>%2$s</li><li>(102) 6666 8888</li><li>%3$s</li><li>(102) 8888 9999</li><li>%4$s</li></ul>',__('Contact Details','structural'),__('14 Tottenham Court Road, London, English','structural'),__('example.com','structural'),__('Mon - Sat: 9:00 - 18:00','structural'))	
 					)
 				)
 			),
@@ -461,6 +461,25 @@ if ( ! function_exists( 'structural_after_import' ) ) {
 	}
 }
 
+/* Check whether the One Click Import Plugin is installed or not */
+
+function is_plugin_installed($pluginTitle)
+{
+    // get all the plugins
+    $installedPlugins = get_plugins();
+
+    foreach ($installedPlugins as $installedPlugin => $data) {
+
+        // check for the plugin title
+        if ($data['Title'] == $pluginTitle) {
+
+            // return the plugin folder/file
+            return true;
+        }
+    }
+
+    return false;
+}
 
 /* Recommended plugin using TGM */
 add_action( 'tgmpa_register', 'structural_register_plugins');
@@ -508,8 +527,25 @@ if( !function_exists('structural_register_plugins') ) {
 			// Automatically activate plugins after installation or not.
 			'message'      => '',
 			// Message to output right before the plugins table.
+			'strings'      => array(
+				'notice_can_activate_recommended' => _n_noop(
+					/* translators: 1: plugin name(s). */
+					'Activate the following plugin to import demo content of this theme: %1$s.','structural'
+				),
+				'notice_can_install_recommended'  => _n_noop(
+					/* translators: 1: plugin name(s). */
+					'To Make your site look like Theme ScreenShot, Install this Plugin: %1$s. Then Go to Dashboard > Appearance > Import Demo Data.',
+					'structural'
+				),
+			),
 		);
 
 		tgmpa( $plugins, $config );
 	}
 }
+
+/* To Hide Branding message in One Click demo import*/
+
+add_filter( 'pt-ocdi/disable_pt_branding', '__return_true' );
+
+
