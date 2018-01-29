@@ -112,15 +112,11 @@ function structural_customizer_service_color() {
 				{
 					background-color: <?php echo $service_color; ?>;
 				}
-
+                .content-1 .customize-partial-edit-shortcut-button,.content-2 .customize-partial-edit-shortcut-button,.content-3 .customize-partial-edit-shortcut-button {
+                      left:-110px;
+                }
 			</style><?php
 		}
 
 	}?>
-	<style>
-		.content-1 .customize-partial-edit-shortcut-button,.content-2 .customize-partial-edit-shortcut-button,.content-3 .customize-partial-edit-shortcut-button {
-		  left:-110px;
-		}
-
-	</style>
 <?php }

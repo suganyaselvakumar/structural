@@ -33,7 +33,7 @@ function structural_post_nav() {
 }
 endif;
 
-
+ 
 if ( ! function_exists( 'structural_entry_footer' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.

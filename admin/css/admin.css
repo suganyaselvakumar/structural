@@ -290,7 +290,7 @@ a[href="themes.php?page=structural_upgrade"] {
 /* One click demo plugin code */
 
 .ocdi__intro-notice.notice.notice-warning.is-dismissible {
-  display:none !important;
+  display: none !important;
 }     
 
 

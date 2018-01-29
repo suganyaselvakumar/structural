@@ -31,9 +31,9 @@ if ( is_singular() && pings_open() ) { ?>
 								<?php if(dynamic_sidebar('top-left' )) {
 									} elseif (is_customize_preview()) { ?>
 										<div class="dummy-content-left">
-											Click Here to edit the Top-Left Content.
+											<?php _e('Click Here to edit the Top-Left Content.','structural'); ?>
 										</div>
-								<?php } else {} ?>
+								<?php } ?>
 							</div>
 						</div>
 		
@@ -42,9 +42,9 @@ if ( is_singular() && pings_open() ) { ?>
 								<?php if( dynamic_sidebar('top-right' )) { 
 								} elseif (is_customize_preview()) { ?> 
 									<div class="dummy-content-right">
-										Click Here to edit the Top-Right Content.
+										<?php _e('Click Here to edit the Top-Right Content.','structural'); ?>
 									</div>
-								<?php } else {} ?>  
+								<?php } ?>  
 							</div>
 						</div>
 					</div>
@@ -75,9 +75,9 @@ if ( is_singular() && pings_open() ) { ?>
 							<?php if( dynamic_sidebar('header-right' )) { 
 								} elseif (is_customize_preview()) { ?> 
 									<div class="dummy-header-right">
-										Click Here to edit the header-Right Content.
+										<?php _e('Click Here to edit the Header-Right Content.','structural'); ?>
 									</div>
-							<?php } else {} ?>  
+							<?php } ?>  
 						</div>
 					</div>
 				<?php }

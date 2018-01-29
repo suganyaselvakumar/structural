@@ -146,7 +146,7 @@ function structural_setup() {
 		        	'custom_html' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'content'  => __('<h4 class="widget-title">Structural</h4>Structure personal participate in ethics training as part of our best practices program and each employee is provided with a skillset that help them makes the best decisions.','structural'),
+					  'content'  => sprintf('<h4 class="widget-title">%1$s</h4><p>%2$s</p>',__('Structural','structural'),__('Structure personal participate in ethics training as part of our best practices program and each employee is provided with a skillset that help them makes the best decisions.','structural') )
 					)
 				)
 			),
@@ -463,15 +463,15 @@ if ( ! function_exists( 'structural_after_import' ) ) {
 
 /* Check whether the One Click Import Plugin is installed or not */
 
-function is_plugin_installed($pluginTitle)
+function structural_is_plugin_installed($plugin_title)
 {
     // get all the plugins
-    $installedPlugins = get_plugins();
+    $installed_plugins = get_plugins();
 
-    foreach ($installedPlugins as $installedPlugin => $data) {
+    foreach ($installed_plugins as $installed_plugin => $data) {
 
         // check for the plugin title
-        if ($data['Title'] == $pluginTitle) {
+        if ($data['Title'] == $plugin_title) {
 
             // return the plugin folder/file
             return true;

@@ -47,9 +47,9 @@ Enable/Disable featured images visibility.
 == Changelog ==
 
 = 1.0.9 =
- * BreadCrumb Background image and Color option added.
+ * Breadcrumb Background image and Color option added.
  * One Click demo Import and Starter content issues are fixed.
- * Customizer Selective Refresh button added. 
+ * Cusomizer buttons added for editable content sections.
 
 = 1.0.8 =
  * Added site Creation Ads in Theme Upgrade Page.
@@ -60,9 +60,9 @@ Enable/Disable featured images visibility.
 == Upgrade Notice ==
 
 = 1.0.9 =
- * BreadCrumb Background image and Color option added.
+ * Breadcrumb Background image and Color option added.
  * One Click demo Import and Starter content issues are fixed.
- * Customizer Selective Refresh button added. 
+ * Cusomizer buttons added for editable content sections.
 
 Structural WordPress Theme bundles the following third-party resources:
 == Resources ==

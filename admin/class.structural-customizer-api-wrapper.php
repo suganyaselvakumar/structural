@@ -182,7 +182,6 @@ if( ! class_exists('Structural_Customizer_API_Wrapper') ) {
 								'label' => isset($field_details['label']) ? $field_details['label'] : '',
 								'setting' => $field_id,
 								'section' => $this->_section_id,
-								'input_attrs' => isset($field_details['input_attrs'])
 							)
 						)
 					);
