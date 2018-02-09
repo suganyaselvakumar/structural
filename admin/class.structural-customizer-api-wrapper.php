@@ -165,6 +165,7 @@ if( ! class_exists('Structural_Customizer_API_Wrapper') ) {
 				)
 			);
 		}
+
 		/**
 		 * Add Control to section
 		 * @param [type] $wp_customize  [description]

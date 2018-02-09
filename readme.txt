@@ -79,4 +79,4 @@ Structural WordPress Theme bundles the following third-party resources:
 		https://pixabay.com/en/architecture-skyscraper-urban-city-768432/
 		https://pixabay.com/en/singapore-marina-bay-sands-landmark-246836/
 		https://pixabay.com/en/architecture-building-cctv-concrete-1839357/
-* Except above All Images inside the images folder are created by own. Those Image are licensed under CC0 Public Domain.
+* Except above All Images inside the images folder are created by own. Those Image are licensed under CC0 Public Domain. 
