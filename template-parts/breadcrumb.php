@@ -14,7 +14,7 @@ $breadcrumb_bg_attachment = get_theme_mod('breadcrumb_bg_attachment','fixed');
 $breadcrumb_background_color = get_theme_mod('breadcrumb_background_color','#27323d');
 if(get_theme_mod('breadcrumb_background_image_status',true)) {
 	if( $breadcrumb_bg_imgae != '' ) {
-		$breadcrumb_background_image = $breadcrumb_bg_imgae ;
+		$breadcrumb_background_image = $breadcrumb_bg_imgae;
 	} else {
 		$breadcrumb_background_image = get_template_directory_uri() . '/images/breadcrumb.png';
 	}

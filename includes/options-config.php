@@ -173,7 +173,7 @@ function structural_display_upgrade() {
 
 	   <h2 class="nav-tab-wrapper">
 	        <a href="?page=structural_upgrade" class="nav-tab<?php echo is_null($tab) ? ' nav-tab-active' : null; ?>"><?php echo $theme_data->Name; ?></a>
-	      	<a href="?page=structural_upgrade&tab=one_click_demo" class="nav-tab<?php echo $tab == 'one_click_demo' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'Import Demo Data', 'structural' );  ?></a> 
+	      	<a href="?page=structural_upgrade&tab=one_click_demo" class="nav-tab<?php echo $tab == 'one_click_demo' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'Import Demo Data', 'structural' );  ?></a>
 	        <a href="?page=structural_upgrade&tab=pro_features" class="nav-tab<?php echo $tab == 'pro_features' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'PRO Features', 'structural' );  ?></a>
             <a href="?page=structural_upgrade&tab=free_vs_pro" class="nav-tab<?php echo $tab == 'free_vs_pro' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'Free VS PRO', 'structural' ); ?></a>
 	        <?php do_action( 'structural_admin_more_tabs' ); ?>
@@ -288,7 +288,7 @@ function structural_display_upgrade() {
 		                    </tr>
 		                    <tr>
 		                         <td><h3><?php _e('Social Links', 'structural'); ?></h3></td>
-		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                         <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
 		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                    <tr>
@@ -725,6 +725,12 @@ function structural_display_upgrade() {
 								'sanitize_callback' => 'absint',
 								'default' => 3,  
 							),
+							'recent_posts_exclude' => array(
+								'type' => 'text',
+								'label' => __('Exclude the Posts from Home Page.Post IDs, separated by commas', 'structural'),
+								'description' => __('Post IDs, separated by commas.','structural'),
+								'sanitize_callback' => 'sanitize_text_field', 
+							), 
 						),
 				    ),
 				    'page-content-section' => array(
