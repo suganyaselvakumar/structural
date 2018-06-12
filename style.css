@@ -2,9 +2,9 @@
 Theme Name: Structural
 Theme URI: http://www.webulousthemes.com/structural/
 Author: N. Venkat Raj  
-Author URI: http://www.webulousthemes.com/
+Author URI: https://www.webulousthemes.com/
 Description: Structural is a constrcution based theme. It is an attractive, modern, easy to use and responsive WordPress theme with colorful design and stunning flexibility. There is no theme options panel, instead uses Customizer, core feature of WordPress and comes with lots of options to customize. Some of the available options are awesome slider section, header options, footer options, layout design options, widget options and lots of other available options will allow you to create unique website as you want. 
-Version: 1.1.0
+Version: 1.1.2
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: structural
@@ -1456,16 +1456,16 @@ object {
   .share-box ul li {
     border: 0;
     padding: 0;
-    margin: 0 8px 0px 0px;
+    margin: 0 10px 0px 0px;
     display: inline-block; }
     .share-box ul li a {
-      width: 30px;
-      height: 30px;
+      width: 35px;
+      height: 35px;
       color: #131e32;
       display: inline-block;
       background-color: #131e32;
       text-align: center;
-      line-height: 30px;
+      line-height: 35px;
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg);
       color: #fff; }
@@ -1476,8 +1476,7 @@ object {
         -webkit-transform: rotate(-45deg);
                 transform: rotate(-45deg);
         font-size: 14px;
-        font-size: 1.4rem;
-        line-height: 2; }
+        font-size: 1.4rem; }
 
 .share-box {
   margin-bottom: 50px; }
@@ -2957,6 +2956,8 @@ blockquote, q {
         padding-right: 5px; }
       .site-footer .footer-widgets ul li:hover {
         background-position: 10px 12px; }
+      .site-footer .footer-widgets ul li ul li {
+        padding: 5px 0px 5px 15px; }
     .site-footer .footer-widgets ul.children,
     .site-footer .footer-widgets .widget_nav_menu ul.sub-menu {
       border-color: rgba(255, 255, 255, 0.2); }
@@ -3008,6 +3009,23 @@ blockquote, q {
       color: #131e32; }
     .site-footer .footer-widgets .widget_rss ul li {
       background: none; }
+  .site-footer .scroll-to-top {
+    background: #ffb500;
+    color: #fff;
+    bottom: 3%;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    z-index: 999;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    border-radius: 4px;
+    transition: background-color 0.3s linear; }
+  .site-footer .scroll-to-top:hover {
+    background: rgba(255, 181, 0, 0.8); }
 
 .site-info {
   background: #ffb500; }
@@ -3051,10 +3069,8 @@ blockquote, q {
 @media only screen and (max-width: 768px) {
   .breadcrumb-left, .breadcrumb-right {
     text-align: center !important; }
-  .breadcrumb .container .eight.columns, .branding .container .eight.columns {
+  .breadcrumb .container .eight.columns {
     width: 100%;
-    text-align: center; }
-  .breadcrumb .site-title, .breadcrumb .site-description, .branding .site-title, .branding .site-description {
     text-align: center; }
   .post-wrapper .latest-post {
     padding: 0px;
@@ -3063,10 +3079,6 @@ blockquote, q {
     padding: 7px 2px; }
   table td {
     padding: 7px 2px; }
-  .site-branding {
-    text-align: center; }
-    .site-branding img {
-      margin: 0 auto; }
   .main-navigation {
     margin: 0;
     float: none; }
@@ -3098,9 +3110,9 @@ blockquote, q {
   .top-nav {
     padding: 10px 0px;
     text-align: center; }
-    .top-nav .seven.columns .cart-right, .top-nav .eight.columns .cart-right {
+    .top-nav .ten.columns .cart-right, .top-nav .six.columns .cart-right {
       text-align: center; }
-      .top-nav .seven.columns .cart-right ul li, .top-nav .eight.columns .cart-right ul li {
+      .top-nav .ten.columns .cart-right ul li, .top-nav .six.columns .cart-right ul li {
         margin-right: 0px; }
     .top-nav .one.columns {
       display: none; }
@@ -3127,6 +3139,12 @@ blockquote, q {
   .service-wrapper .six.columns .service-image-section {
     position: static;
     margin-bottom: 70px; } }
+
+@media only screen and (max-width: 767px) {
+  .branding .site-branding {
+    text-align: center; }
+    .branding .site-branding img {
+      margin: 0 auto; } }
 
 @media only screen and (max-width: 480px) {
   .main-navigation {

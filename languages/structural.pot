@@ -288,7 +288,11 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: single.php:37
+#: single.php:31
+msgid "Share this on ..."
+msgstr ""
+
+#: single.php:79
 msgid "About Author:"
 msgstr ""
 
@@ -1184,186 +1188,222 @@ msgid "Footer Widget Area"
 msgstr ""
 
 #: includes/options-config.php:515
+msgid "Enable Scroll To Top"
+msgstr ""
+
+#: includes/options-config.php:521
 msgid "Footer Copyright Text (Validated that it's HTML Allowed)"
 msgstr ""
 
-#: includes/options-config.php:516
+#: includes/options-config.php:522
 msgid "HTML Allowed. <b>This field is even HTML validated! </b>"
 msgstr ""
 
-#: includes/options-config.php:522
+#: includes/options-config.php:528
 msgid "Blog"
 msgstr ""
 
-#: includes/options-config.php:523
+#: includes/options-config.php:529
 msgid "Blog Related Posts options"
 msgstr ""
 
-#: includes/options-config.php:527
+#: includes/options-config.php:533
 msgid "Enable Featured Image"
 msgstr ""
 
-#: includes/options-config.php:533
+#: includes/options-config.php:539
 msgid "Choose the featured image display type for Blog Page "
 msgstr ""
 
-#: includes/options-config.php:535, includes/options-config.php:551
+#: includes/options-config.php:541, includes/options-config.php:563
 msgid "Large Featured Image"
 msgstr ""
 
-#: includes/options-config.php:536, includes/options-config.php:552
+#: includes/options-config.php:542, includes/options-config.php:564
 msgid "Small Featured Image"
 msgstr ""
 
-#: includes/options-config.php:543
+#: includes/options-config.php:550
+msgid "Single Blog"
+msgstr ""
+
+#: includes/options-config.php:551
+msgid "Single Blog page Related Posts options"
+msgstr ""
+
+#: includes/options-config.php:555
 msgid "Enable Single Post Featured Image"
 msgstr ""
 
-#: includes/options-config.php:549
+#: includes/options-config.php:561
 msgid "Choose the featured image display type for Single Page "
 msgstr ""
 
-#: includes/options-config.php:559
-msgid " Enable Author Bio Box below single post"
+#: includes/options-config.php:571
+msgid " Enable Social Sharing Box below single post"
 msgstr ""
 
-#: includes/options-config.php:560
-msgid "Show Author information box below single post."
+#: includes/options-config.php:577
+msgid " Enable Facebook Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:566
-msgid "Show Related posts"
-msgstr ""
-
-#: includes/options-config.php:567
-msgid "Show related posts."
-msgstr ""
-
-#: includes/options-config.php:573
-msgid "Related Posts Must Be Shown As:"
-msgstr ""
-
-#: includes/options-config.php:575
-msgid "Related Posts By Tags"
-msgstr ""
-
-#: includes/options-config.php:576
-msgid "Related Posts By Categories"
-msgstr ""
-
-#: includes/options-config.php:588
-msgid " Home Options"
+#: includes/options-config.php:583
+msgid " Enable Twitter Sharing option below single post"
 msgstr ""
 
 #: includes/options-config.php:589
-msgid " Select Front page display as a static front page in order to visible the following sections"
+msgid " Enable Linkedin Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:592
-msgid "Section: Slider"
+#: includes/options-config.php:595
+msgid " Enable Google Plus Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:596
-msgid "Enable Home Page Slider Section"
-msgstr ""
-
-#: includes/options-config.php:602
-msgid "Slider Posts Category"
+#: includes/options-config.php:601
+msgid " Enable Email Sharing option below single post"
 msgstr ""
 
 #: includes/options-config.php:607
-msgid "No. of Sliders"
+msgid " Enable Author Bio Box below single post"
 msgstr ""
 
-#: includes/options-config.php:614
-msgid "Section: Service"
+#: includes/options-config.php:613
+msgid "Show Related posts"
 msgstr ""
 
-#: includes/options-config.php:615, includes/options-config.php:680
-msgid " Select Front page display as a static front page in orde to visible this section, Service related options"
+#: includes/options-config.php:619
+msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: includes/options-config.php:619, includes/options-config.php:684
-msgid "Check this box to Show this section"
+#: includes/options-config.php:621
+msgid "Related Posts By Tags"
 msgstr ""
 
-#: includes/options-config.php:625, includes/options-config.php:690, includes/options-config.php:719
-msgid "Section Title & Description"
+#: includes/options-config.php:622
+msgid "Related Posts By Categories"
 msgstr ""
 
-#: includes/options-config.php:629
-msgid "Choose Service Section Icons #1"
+#: includes/options-config.php:633
+msgid " Home Options"
 msgstr ""
 
 #: includes/options-config.php:634
-msgid "Service #1 Color"
+msgid " Select Front page display as a static front page in order to visible the following sections"
 msgstr ""
 
-#: includes/options-config.php:640
-msgid "Service Section #1"
+#: includes/options-config.php:637
+msgid "Section: Slider"
 msgstr ""
 
-#: includes/options-config.php:645
-msgid "Choose Service Section Icons #2"
+#: includes/options-config.php:641
+msgid "Enable Home Page Slider Section"
 msgstr ""
 
-#: includes/options-config.php:650
-msgid "Service #2 Color"
+#: includes/options-config.php:647
+msgid "Slider Posts Category"
 msgstr ""
 
-#: includes/options-config.php:656
-msgid "Service Section #2"
+#: includes/options-config.php:652
+msgid "No. of Sliders"
 msgstr ""
 
-#: includes/options-config.php:661
-msgid "Choose Service Section Icons #3"
+#: includes/options-config.php:659
+msgid "Section: Service"
 msgstr ""
 
-#: includes/options-config.php:666
-msgid "Service #3 Color"
+#: includes/options-config.php:660, includes/options-config.php:725
+msgid " Select Front page display as a static front page in orde to visible this section, Service related options"
 msgstr ""
 
-#: includes/options-config.php:672
-msgid "Service Section #3"
+#: includes/options-config.php:664, includes/options-config.php:729
+msgid "Check this box to Show this section"
+msgstr ""
+
+#: includes/options-config.php:670, includes/options-config.php:735, includes/options-config.php:764
+msgid "Section Title & Description"
+msgstr ""
+
+#: includes/options-config.php:674
+msgid "Choose Service Section Icons #1"
 msgstr ""
 
 #: includes/options-config.php:679
-msgid "Section: Image Content"
+msgid "Service #1 Color"
+msgstr ""
+
+#: includes/options-config.php:685
+msgid "Service Section #1"
+msgstr ""
+
+#: includes/options-config.php:690
+msgid "Choose Service Section Icons #2"
 msgstr ""
 
 #: includes/options-config.php:695
-msgid "Image content Section #1"
+msgid "Service #2 Color"
 msgstr ""
 
-#: includes/options-config.php:700
-msgid "Image content Section #2"
+#: includes/options-config.php:701
+msgid "Service Section #2"
 msgstr ""
 
-#: includes/options-config.php:707
-msgid "Recent Blog"
+#: includes/options-config.php:706
+msgid "Choose Service Section Icons #3"
 msgstr ""
 
-#: includes/options-config.php:708, includes/options-config.php:738
-msgid "Default Page content related option"
+#: includes/options-config.php:711
+msgid "Service #3 Color"
 msgstr ""
 
-#: includes/options-config.php:712
-msgid "Enable Home Page Recent Post Section"
-msgstr ""
-
-#: includes/options-config.php:713
-msgid "Enable recent post section in home page"
+#: includes/options-config.php:717
+msgid "Service Section #3"
 msgstr ""
 
 #: includes/options-config.php:724
+msgid "Section: Image Content"
+msgstr ""
+
+#: includes/options-config.php:740
+msgid "Image content Section #1"
+msgstr ""
+
+#: includes/options-config.php:745
+msgid "Image content Section #2"
+msgstr ""
+
+#: includes/options-config.php:752
+msgid "Recent Blog"
+msgstr ""
+
+#: includes/options-config.php:753, includes/options-config.php:783
+msgid "Default Page content related option"
+msgstr ""
+
+#: includes/options-config.php:757
+msgid "Enable Home Page Recent Post Section"
+msgstr ""
+
+#: includes/options-config.php:758
+msgid "Enable recent post section in home page"
+msgstr ""
+
+#: includes/options-config.php:769
 msgid "No. of Recent Posts"
 msgstr ""
 
-#: includes/options-config.php:737
+#: includes/options-config.php:775
+msgid "Exclude the Posts from Home Page.Post IDs, separated by commas"
+msgstr ""
+
+#: includes/options-config.php:776
+msgid "Post IDs, separated by commas."
+msgstr ""
+
+#: includes/options-config.php:782
 msgid "Page Content"
 msgstr ""
 
-#: includes/options-config.php:742
+#: includes/options-config.php:787
 msgid "Check this box to Show page content"
 msgstr ""
 

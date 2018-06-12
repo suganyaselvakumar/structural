@@ -2,8 +2,8 @@
 Contributors: Webulous
 Tags: blog, news, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, translation-ready, theme-options, rtl-language-support
 Requires at least: 4.0
-Tested up to: 4.9.5
-Stable tag: 1.1.0
+Tested up to: 4.9.6
+Stable tag: 1.1.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
   
@@ -46,6 +46,12 @@ Enable/Disable featured images visibility.
 
 == Changelog ==
 
+= 1.1.2 =
+ * Scroll to Top option added.
+
+= 1.1.1 =
+ * Social Sharing Box option added in Single post.
+
 = 1.1.0 =
  * Post Exclude Option added. 
 
@@ -62,8 +68,8 @@ Enable/Disable featured images visibility.
 
 == Upgrade Notice ==
 
-= 1.1.0 =
- * Post Exclude Option added. 
+= 1.1.2 =
+ * Scroll to Top option added.
 
 Structural WordPress Theme bundles the following third-party resources:
 == Resources ==
