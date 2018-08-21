@@ -1869,6 +1869,87 @@ blockquote, q {
   .search article .entry-meta .author a {
     padding-left: 0px; }
 
+/* Gutenberg CSS style */
+ul {
+  list-style-type: disc; }
+
+.wp-block-latest-posts.aligncenter {
+  margin-left: 3em; }
+
+.wp-block-verse {
+  color: #8f8f8f; }
+
+.wp-block-quote::before, blockquote:before {
+  content: "";
+  border: 0px; }
+
+.wp-block-quote, blockquote, q {
+  border-left: 4px solid black;
+  padding-left: 5px;
+  margin-top: 0px;
+  padding-top: 0px; }
+
+.wp-block-quote cite {
+  margin: 0px;
+  padding-left: 20px; }
+
+.is-large {
+  border: 0px;
+  color: #131e32; }
+
+.is-large cite {
+  text-align: right;
+  display: block;
+  color: #333;
+  font-style: italic;
+  padding-right: 20px; }
+
+blockquote.wp-block-pullquote, blockquote, q {
+  margin-bottom: 20px; }
+
+blockquote::before, q:before {
+  content: "";
+  border: 0px;
+  border-radius: 0; }
+
+.wp-block-pullquote {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  padding: 0px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  border-left: none; }
+
+.wp-block-pullquote.alignleft {
+  margin-right: 25px; }
+
+.wp-block-pullquote.alignright {
+  margin-left: 25px; }
+
+.wp-block-button.aligncenter a:hover {
+  padding: 11px 24px;
+  box-shadow: 3px 3px black; }
+
+.wp-block-button.alignright a:hover {
+  padding: 11px 24px;
+  box-shadow: 3px 3px black; }
+
+.wp-block-button.alignleft a:hover {
+  padding: 11px 24px;
+  box-shadow: 3px 3px black;
+  -webkit-box-shadow: 3px 3px black; }
+
+.wp-block-cover-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.wp-block-audio {
+  text-align: center; }
+
+.wp-block-button.aligncenter {
+  margin-bottom: 1.5em; }
+
 .home .site-header {
   border-bottom: none; }
 
