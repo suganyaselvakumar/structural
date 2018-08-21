@@ -4,7 +4,7 @@ Theme URI: http://www.webulousthemes.com/structural/
 Author: N. Venkat Raj  
 Author URI: http://www.webulousthemes.com/
 Description: Structural is a constrcution based theme. It is an attractive, modern, easy to use and responsive WordPress theme with colorful design and stunning flexibility. There is no theme options panel, instead uses Customizer, core feature of WordPress and comes with lots of options to customize. Some of the available options are awesome slider section, header options, footer options, layout design options, widget options and lots of other available options will allow you to create unique website as you want. 
-Version: 1.0.8
+Version: 1.0.9
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: structural
@@ -1276,7 +1276,7 @@ object {
     font-size: 1.4rem;
     color: #8f8f8f;
     font-family: "Open Sans", sans-serif;
-    padding: 0px 10px 10px 0px;
+    padding: 10px 0px 0px;
     position: relative;
     margin-bottom: 0;
     margin-top: -12px; }
@@ -1999,6 +1999,8 @@ blockquote, q {
     .post-wrapper .latest-posts .latest-post-details .latest-post-content {
       margin: 10px 0 30px;
       text-align: justify; }
+      .post-wrapper .latest-posts .latest-post-details .latest-post-content h1, .post-wrapper .latest-posts .latest-post-details .latest-post-content h2, .post-wrapper .latest-posts .latest-post-details .latest-post-content h3, .post-wrapper .latest-posts .latest-post-details .latest-post-content h4, .post-wrapper .latest-posts .latest-post-details .latest-post-content h5, .post-wrapper .latest-posts .latest-post-details .latest-post-content h6 {
+        line-height: normal; }
     .post-wrapper .latest-posts .latest-post-details .btn-readmore {
       display: inline-block;
       padding: 20px 0px 0px 20px;

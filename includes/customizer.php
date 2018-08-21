@@ -14,6 +14,57 @@ function structural_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	$wp_customize->selective_refresh->add_partial('service_section_title', array(
+        'selector' => '.service-wrapper .section-head', 
+    ));
+    $wp_customize->selective_refresh->add_partial('image_content_section_title', array(
+        'selector' => '.content-section-wrapper .section-head', 
+    ));
+    $wp_customize->selective_refresh->add_partial('recent_post_section_title', array(
+        'selector' => '.post-wrapper .section-head', 
+    ));
+    $wp_customize->selective_refresh->add_partial('recent_posts_count', array(
+        'selector' => '.post-wrapper .latest-posts', 
+    ));
+    $wp_customize->selective_refresh->add_partial('image_content_section_1', array(
+        'selector' => '.content-section-wrapper .service-image-section', 
+    ));
+    $wp_customize->selective_refresh->add_partial('image_content_section_2', array(
+        'selector' => '.content-section-wrapper .service-content', 
+    ));
+	$wp_customize->selective_refresh->add_partial('service_section_icon_1', array(
+        'selector' => '.service-1', 
+    ));
+    $wp_customize->selective_refresh->add_partial('service_section_1', array(
+        'selector' => '.content-1', 
+    ));
+    $wp_customize->selective_refresh->add_partial('service_section_icon_2', array(
+        'selector' => '.service-2', 
+    ));
+    $wp_customize->selective_refresh->add_partial('service_section_2', array(
+        'selector' => '.content-2', 
+    ));
+    $wp_customize->selective_refresh->add_partial('service_section_icon_3', array(
+        'selector' => '.service-3', 
+    ));
+    $wp_customize->selective_refresh->add_partial('service_section_3', array(
+        'selector' => '.content-3', 
+    ));
+    $wp_customize->selective_refresh->add_partial('slider_count', array(
+        'selector' => '.flex-caption', 
+    ));
+	$wp_customize->selective_refresh->add_partial('sidebars_widgets[top-left]', array(
+        'selector' => '.cart-left .dummy-content-left', 
+    ));
+    $wp_customize->selective_refresh->add_partial('sidebars_widgets[top-right]', array(
+        'selector' => '.cart-right .dummy-content-right', 
+    ));
+    $wp_customize->selective_refresh->add_partial('sidebars_widgets[header-right]', array(
+        'selector' => '.header-right .dummy-header-right', 
+    ));
+    $wp_customize->selective_refresh->add_partial('copyright', array(
+        'selector' => '.site-info .container', 
+    ));
 }
 add_action( 'customize_register', 'structural_customize_register' );
 
@@ -24,6 +75,7 @@ function structural_customize_preview_js() {
 	wp_enqueue_script( 'structural_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
 }
 add_action( 'customize_preview_init', 'structural_customize_preview_js' );
+
 
 
 add_action( 'wp_head','structural_customizer_service_color' );
@@ -60,9 +112,11 @@ function structural_customizer_service_color() {
 				{
 					background-color: <?php echo $service_color; ?>;
 				}
-
+                .content-1 .customize-partial-edit-shortcut-button,.content-2 .customize-partial-edit-shortcut-button,.content-3 .customize-partial-edit-shortcut-button {
+                      left:-110px;
+                }
 			</style><?php
 		}
 
-	}
-}
+	}?>
+<?php }

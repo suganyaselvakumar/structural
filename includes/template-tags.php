@@ -33,7 +33,7 @@ function structural_post_nav() {
 }
 endif;
 
-
+ 
 if ( ! function_exists( 'structural_entry_footer' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.
@@ -123,11 +123,11 @@ if( ! function_exists('structural_recent_posts') ) {
 			$recent_post_status=get_theme_mod('enable_recent_post_service',true);
 		   	$recent_post_section_title= get_theme_mod('recent_post_section_title');
 		   	if ( '$recent_post_status' && '$recent_post_section_title'  ) {
-				$output.= '<div class="section-head">';
+				$output.= '<div class="container"><div class="section-head">';
 				$output.= '<h1 class="title-divider">' . get_the_title(absint($recent_post_section_title)) . '</h1>';
 				$description = get_post_field('post_content',absint($recent_post_section_title));
 				$output.= '<p class="sub-description">' . $description . '</p>';
-			    $output.= '</div>';
+			    $output.= '</div></div>';
 			}
 			$output .=  '<div class="container">'; 
 			$output .= '<div class="latest-posts clearfix">';
@@ -544,7 +544,7 @@ if( ! function_exists ( 'structural_add_service_section' ) ) {
 										    	      endif;
 
 									    	        if($icon_url): ?>
-									    	        <div class="icon-wrapper">
+									    	        <div class="icon-wrapper service-<?php echo $i;?>">
 									    	          	<i class="fa <?php echo $icon_url; ?>" ></i>
 													</div>
 									    	        <?php
@@ -552,7 +552,7 @@ if( ! function_exists ( 'structural_add_service_section' ) ) {
 				                                        <a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php the_post_thumbnail('structural_recent_page_img'); ?></a><?php
 									    	        endif; ?>
 										    	
-										    	<div class="service-content">
+										    	<div class="service-content content-<?php echo $i;?>">
 										    	    <?php the_title( sprintf( '<h4><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?>
 											    	<?php the_content( __( 'Read More', 'structural' ) );
 											    	wp_link_pages( array(
