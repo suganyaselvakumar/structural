@@ -92,11 +92,11 @@ msgstr ""
 msgid "Webulous Themes"
 msgstr ""
 
-#: front-page.php:38, includes/template-tags.php:444, includes/template-tags.php:557, template-parts/content-single.php:40, template-parts/content.php:45
+#: front-page.php:40, includes/template-tags.php:446, includes/template-tags.php:559, template-parts/content-single.php:40, template-parts/content.php:45
 msgid "Read More"
 msgstr ""
 
-#: front-page.php:40, front-page.php:74, includes/template-tags.php:155, includes/template-tags.php:559, includes/template-tags.php:632, template-parts/content-single.php:50, template-parts/content.php:55
+#: front-page.php:42, front-page.php:77, includes/template-tags.php:157, includes/template-tags.php:561, includes/template-tags.php:634, template-parts/content-single.php:50, template-parts/content.php:55
 msgid "Pages: "
 msgstr ""
 
@@ -268,19 +268,19 @@ msgid_plural "structural"
 msgstr[0] ""
 msgstr[1] ""
 
-#: header.php:24
+#: header.php:23
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:34
+#: header.php:33
 msgid "Click Here to edit the Top-Left Content."
 msgstr ""
 
-#: header.php:45
+#: header.php:44
 msgid "Click Here to edit the Top-Right Content."
 msgstr ""
 
-#: header.php:78
+#: header.php:77
 msgid "Click Here to edit the Header-Right Content."
 msgstr ""
 
@@ -288,7 +288,11 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: single.php:37
+#: single.php:31
+msgid "Share this on ..."
+msgstr ""
+
+#: single.php:79
 msgid "About Author:"
 msgstr ""
 
@@ -1184,186 +1188,222 @@ msgid "Footer Widget Area"
 msgstr ""
 
 #: includes/options-config.php:515
+msgid "Enable Scroll To Top"
+msgstr ""
+
+#: includes/options-config.php:521
 msgid "Footer Copyright Text (Validated that it's HTML Allowed)"
 msgstr ""
 
-#: includes/options-config.php:516
+#: includes/options-config.php:522
 msgid "HTML Allowed. <b>This field is even HTML validated! </b>"
 msgstr ""
 
-#: includes/options-config.php:522
+#: includes/options-config.php:528
 msgid "Blog"
 msgstr ""
 
-#: includes/options-config.php:523
+#: includes/options-config.php:529
 msgid "Blog Related Posts options"
 msgstr ""
 
-#: includes/options-config.php:527
+#: includes/options-config.php:533
 msgid "Enable Featured Image"
 msgstr ""
 
-#: includes/options-config.php:533
+#: includes/options-config.php:539
 msgid "Choose the featured image display type for Blog Page "
 msgstr ""
 
-#: includes/options-config.php:535, includes/options-config.php:551
+#: includes/options-config.php:541, includes/options-config.php:563
 msgid "Large Featured Image"
 msgstr ""
 
-#: includes/options-config.php:536, includes/options-config.php:552
+#: includes/options-config.php:542, includes/options-config.php:564
 msgid "Small Featured Image"
 msgstr ""
 
-#: includes/options-config.php:543
+#: includes/options-config.php:550
+msgid "Single Blog"
+msgstr ""
+
+#: includes/options-config.php:551
+msgid "Single Blog page Related Posts options"
+msgstr ""
+
+#: includes/options-config.php:555
 msgid "Enable Single Post Featured Image"
 msgstr ""
 
-#: includes/options-config.php:549
+#: includes/options-config.php:561
 msgid "Choose the featured image display type for Single Page "
 msgstr ""
 
-#: includes/options-config.php:559
-msgid " Enable Author Bio Box below single post"
+#: includes/options-config.php:571
+msgid " Enable Social Sharing Box below single post"
 msgstr ""
 
-#: includes/options-config.php:560
-msgid "Show Author information box below single post."
+#: includes/options-config.php:577
+msgid " Enable Facebook Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:566
-msgid "Show Related posts"
-msgstr ""
-
-#: includes/options-config.php:567
-msgid "Show related posts."
-msgstr ""
-
-#: includes/options-config.php:573
-msgid "Related Posts Must Be Shown As:"
-msgstr ""
-
-#: includes/options-config.php:575
-msgid "Related Posts By Tags"
-msgstr ""
-
-#: includes/options-config.php:576
-msgid "Related Posts By Categories"
-msgstr ""
-
-#: includes/options-config.php:588
-msgid " Home Options"
+#: includes/options-config.php:583
+msgid " Enable Twitter Sharing option below single post"
 msgstr ""
 
 #: includes/options-config.php:589
-msgid " Select Front page display as a static front page in order to visible the following sections"
+msgid " Enable Linkedin Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:592
-msgid "Section: Slider"
+#: includes/options-config.php:595
+msgid " Enable Google Plus Sharing option below single post"
 msgstr ""
 
-#: includes/options-config.php:596
-msgid "Enable Home Page Slider Section"
-msgstr ""
-
-#: includes/options-config.php:602
-msgid "Slider Posts Category"
+#: includes/options-config.php:601
+msgid " Enable Email Sharing option below single post"
 msgstr ""
 
 #: includes/options-config.php:607
-msgid "No. of Sliders"
+msgid " Enable Author Bio Box below single post"
 msgstr ""
 
-#: includes/options-config.php:614
-msgid "Section: Service"
+#: includes/options-config.php:613
+msgid "Show Related posts"
 msgstr ""
 
-#: includes/options-config.php:615, includes/options-config.php:680
-msgid " Select Front page display as a static front page in orde to visible this section, Service related options"
+#: includes/options-config.php:619
+msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: includes/options-config.php:619, includes/options-config.php:684
-msgid "Check this box to Show this section"
+#: includes/options-config.php:621
+msgid "Related Posts By Tags"
 msgstr ""
 
-#: includes/options-config.php:625, includes/options-config.php:690, includes/options-config.php:719
-msgid "Section Title & Description"
+#: includes/options-config.php:622
+msgid "Related Posts By Categories"
 msgstr ""
 
-#: includes/options-config.php:629
-msgid "Choose Service Section Icons #1"
+#: includes/options-config.php:633
+msgid " Home Options"
 msgstr ""
 
 #: includes/options-config.php:634
-msgid "Service #1 Color"
+msgid " Select Front page display as a static front page in order to visible the following sections"
 msgstr ""
 
-#: includes/options-config.php:640
-msgid "Service Section #1"
+#: includes/options-config.php:637
+msgid "Section: Slider"
 msgstr ""
 
-#: includes/options-config.php:645
-msgid "Choose Service Section Icons #2"
+#: includes/options-config.php:641
+msgid "Enable Home Page Slider Section"
 msgstr ""
 
-#: includes/options-config.php:650
-msgid "Service #2 Color"
+#: includes/options-config.php:647
+msgid "Slider Posts Category"
 msgstr ""
 
-#: includes/options-config.php:656
-msgid "Service Section #2"
+#: includes/options-config.php:652
+msgid "No. of Sliders"
 msgstr ""
 
-#: includes/options-config.php:661
-msgid "Choose Service Section Icons #3"
+#: includes/options-config.php:659
+msgid "Section: Service"
 msgstr ""
 
-#: includes/options-config.php:666
-msgid "Service #3 Color"
+#: includes/options-config.php:660, includes/options-config.php:725
+msgid " Select Front page display as a static front page in orde to visible this section, Service related options"
 msgstr ""
 
-#: includes/options-config.php:672
-msgid "Service Section #3"
+#: includes/options-config.php:664, includes/options-config.php:729
+msgid "Check this box to Show this section"
+msgstr ""
+
+#: includes/options-config.php:670, includes/options-config.php:735, includes/options-config.php:764
+msgid "Section Title & Description"
+msgstr ""
+
+#: includes/options-config.php:674
+msgid "Choose Service Section Icons #1"
 msgstr ""
 
 #: includes/options-config.php:679
-msgid "Section: Image Content"
+msgid "Service #1 Color"
+msgstr ""
+
+#: includes/options-config.php:685
+msgid "Service Section #1"
+msgstr ""
+
+#: includes/options-config.php:690
+msgid "Choose Service Section Icons #2"
 msgstr ""
 
 #: includes/options-config.php:695
-msgid "Image content Section #1"
+msgid "Service #2 Color"
 msgstr ""
 
-#: includes/options-config.php:700
-msgid "Image content Section #2"
+#: includes/options-config.php:701
+msgid "Service Section #2"
 msgstr ""
 
-#: includes/options-config.php:707
-msgid "Recent Blog"
+#: includes/options-config.php:706
+msgid "Choose Service Section Icons #3"
 msgstr ""
 
-#: includes/options-config.php:708, includes/options-config.php:732
-msgid "Default Page content related option"
+#: includes/options-config.php:711
+msgid "Service #3 Color"
 msgstr ""
 
-#: includes/options-config.php:712
-msgid "Enable Home Page Recent Post Section"
-msgstr ""
-
-#: includes/options-config.php:713
-msgid "Enable recent post section in home page"
+#: includes/options-config.php:717
+msgid "Service Section #3"
 msgstr ""
 
 #: includes/options-config.php:724
+msgid "Section: Image Content"
+msgstr ""
+
+#: includes/options-config.php:740
+msgid "Image content Section #1"
+msgstr ""
+
+#: includes/options-config.php:745
+msgid "Image content Section #2"
+msgstr ""
+
+#: includes/options-config.php:752
+msgid "Recent Blog"
+msgstr ""
+
+#: includes/options-config.php:753, includes/options-config.php:783
+msgid "Default Page content related option"
+msgstr ""
+
+#: includes/options-config.php:757
+msgid "Enable Home Page Recent Post Section"
+msgstr ""
+
+#: includes/options-config.php:758
+msgid "Enable recent post section in home page"
+msgstr ""
+
+#: includes/options-config.php:769
 msgid "No. of Recent Posts"
 msgstr ""
 
-#: includes/options-config.php:731
+#: includes/options-config.php:775
+msgid "Exclude the Posts from Home Page.Post IDs, separated by commas"
+msgstr ""
+
+#: includes/options-config.php:776
+msgid "Post IDs, separated by commas."
+msgstr ""
+
+#: includes/options-config.php:782
 msgid "Page Content"
 msgstr ""
 
-#: includes/options-config.php:736
+#: includes/options-config.php:787
 msgid "Check this box to Show page content"
 msgstr ""
 
@@ -1382,7 +1422,7 @@ msgid "Next Post&nbsp;"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
-#: includes/template-tags.php:47, includes/template-tags.php:475
+#: includes/template-tags.php:47, includes/template-tags.php:477
 msgid ", "
 msgstr ""
 
@@ -1394,88 +1434,88 @@ msgstr ""
 msgid "Tags"
 msgstr ""
 
-#: includes/template-tags.php:183
+#: includes/template-tags.php:185
 msgid "Home"
 msgstr ""
 
-#: includes/template-tags.php:184
+#: includes/template-tags.php:186
 msgid "Archive by Category \"%s\""
 msgstr ""
 
-#: includes/template-tags.php:185
+#: includes/template-tags.php:187
 msgid "Search Results for \"%s\" Query"
 msgstr ""
 
-#: includes/template-tags.php:186
+#: includes/template-tags.php:188
 msgid "Posts Tagged \"%s\""
 msgstr ""
 
-#: includes/template-tags.php:187
+#: includes/template-tags.php:189
 msgid "Articles Posted by %s"
 msgstr ""
 
-#: includes/template-tags.php:188
+#: includes/template-tags.php:190
 msgid "Error 404"
 msgstr ""
 
-#: includes/template-tags.php:241, includes/template-tags.php:241, includes/template-tags.php:242, includes/template-tags.php:246, includes/template-tags.php:246, includes/template-tags.php:250
+#: includes/template-tags.php:243, includes/template-tags.php:243, includes/template-tags.php:244, includes/template-tags.php:248, includes/template-tags.php:248, includes/template-tags.php:252
 msgid "Y"
 msgstr ""
 
-#: includes/template-tags.php:242
+#: includes/template-tags.php:244
 msgid "m"
 msgstr ""
 
-#: includes/template-tags.php:242, includes/template-tags.php:247
+#: includes/template-tags.php:244, includes/template-tags.php:249
 msgid "F"
 msgstr ""
 
-#: includes/template-tags.php:243
+#: includes/template-tags.php:245
 msgid "d"
 msgstr ""
 
-#: includes/template-tags.php:303
+#: includes/template-tags.php:305
 msgid "Page"
 msgstr ""
 
-#: includes/template-tags.php:318, includes/template-tags.php:329
+#: includes/template-tags.php:320, includes/template-tags.php:331
 msgctxt "post author"
 msgid " %s"
 msgstr ""
 
-#: includes/template-tags.php:349
+#: includes/template-tags.php:351
 msgid "No Comments"
 msgstr ""
 
-#: includes/template-tags.php:351
+#: includes/template-tags.php:353
 msgid " Comments"
 msgstr ""
 
-#: includes/template-tags.php:353
+#: includes/template-tags.php:355
 msgid "1 Comment"
 msgstr ""
 
-#: includes/template-tags.php:357
+#: includes/template-tags.php:359
 msgid "Leave a comment"
 msgstr ""
 
-#: includes/template-tags.php:366, template-parts/content-page.php:29
+#: includes/template-tags.php:368, template-parts/content-page.php:29
 msgid "Edit"
 msgstr ""
 
-#: includes/template-tags.php:413, includes/template-tags.php:416
+#: includes/template-tags.php:415, includes/template-tags.php:418
 msgid "No Related Posts Yet!"
 msgstr ""
 
-#: includes/template-tags.php:477
+#: includes/template-tags.php:479
 msgid "%1$s "
 msgstr ""
 
-#: includes/template-tags.php:491
+#: includes/template-tags.php:493
 msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
 msgstr ""
 
-#: includes/template-tags.php:492
+#: includes/template-tags.php:494
 msgid "Get started with Structural"
 msgstr ""
 

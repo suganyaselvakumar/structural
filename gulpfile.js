@@ -43,7 +43,7 @@ gulp.task( 'translate', function () {
 /* RTL Support */
 gulp.task('rtl', ['styles'], function () { 
     return gulp.src('style.css')
-      .pipe(rtlcss())  
+      .pipe(rtlcss())   
       .pipe(rename({  basename: "rtl" })) // Base(file) name "rtl" 
       .pipe(stripCssComments())
       .pipe(gulp.dest(''));  

@@ -33,7 +33,7 @@ function structural_post_nav() {
 }
 endif;
 
- 
+
 if ( ! function_exists( 'structural_entry_footer' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.
@@ -105,7 +105,8 @@ add_action( 'save_post',     'structural_category_transient_flusher' );
 if( ! function_exists('structural_recent_posts') ) {  
 	function structural_recent_posts() {      
 		$output = '';
-		$posts_per_page  = get_theme_mod('recent_posts_count', 6 );
+		$posts_per_page  = get_theme_mod('recent_posts_count', 6 ); 
+		$post_ID  = explode (',',get_theme_mod('recent_posts_exclude'));
 		// WP_Query arguments
 		$args = array (
 			'post_type'              => 'post',
@@ -113,6 +114,7 @@ if( ! function_exists('structural_recent_posts') ) {
 			'posts_per_page'         => intval($posts_per_page),
 			'ignore_sticky_posts'    => true,
 			'order'                  => 'DESC',
+			'post__not_in'           => $post_ID,
 		);
 
 		// The Query

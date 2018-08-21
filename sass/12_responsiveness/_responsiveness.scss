@@ -38,13 +38,10 @@
   .breadcrumb-left,.breadcrumb-right {    
     text-align: center!important;
   }
-  .breadcrumb,.branding {
+  .breadcrumb {
     .container .eight.columns {
        width: 100%;   
        text-align: center;   
-    }
-    .site-title,.site-description {
-      text-align: center;
     }
   }
 
@@ -60,12 +57,7 @@
   }
 
 
-  .site-branding {
-    text-align: center;
-    img {
-      margin: 0 auto;
-    }
-  }
+  
 
   .main-navigation {
     margin: 0;
@@ -116,7 +108,7 @@
   .top-nav  {
     padding: 10px 0px;
     text-align:center;
-    .seven.columns,.eight.columns {
+    .ten.columns,.six.columns {
       .cart-right{
         text-align:center;
         ul {
@@ -163,6 +155,14 @@
          margin-bottom:70px;
       }
      
+    }
+  }
+}
+@media only screen and (max-width: 767px)  {
+  .branding .site-branding {
+    text-align: center;
+    img {
+      margin: 0 auto;
     }
   }
 }
