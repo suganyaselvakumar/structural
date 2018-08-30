@@ -1713,7 +1713,7 @@ blockquote, q {
     blockquote p cite, q p cite {
       font-style: normal;
       text-transform: uppercase;
-      color: #fff; }
+      color: #131e32; }
     blockquote p a, blockquote p a:visited, q p a, q p a:visited {
       color: #fff;
       font-size: 14px;
@@ -1794,7 +1794,7 @@ blockquote, q {
     padding-right: 0px; }
 
 
-ul {
+#primary ul {
   list-style-type: disc; }
 
 .wp-block-latest-posts.aligncenter {
@@ -1803,11 +1803,11 @@ ul {
 .wp-block-verse {
   color: #8f8f8f; }
 
-.wp-block-quote::before, blockquote:before {
+.wp-block-quote::before, #primary blockquote:before {
   content: "";
   border: 0px; }
 
-.wp-block-quote, blockquote, q {
+.wp-block-quote, #primary blockquote, #primary q {
   border-right: 4px solid black;
   padding-right: 5px;
   margin-top: 0px;
@@ -1828,10 +1828,10 @@ ul {
   font-style: italic;
   padding-left: 20px; }
 
-blockquote.wp-block-pullquote, blockquote, q {
+blockquote.wp-block-pullquote, #primary blockquote, #primary q {
   margin-bottom: 20px; }
 
-blockquote::before, q:before {
+#primary blockquote::before, #primary q:before {
   content: "";
   border: 0px;
   border-radius: 0; }
@@ -1841,7 +1841,8 @@ blockquote::before, q:before {
   border-bottom: 4px solid black;
   padding: 0px;
   padding-bottom: 10px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border-right: none !important; }
 
 .wp-block-pullquote.alignleft {
   margin-left: 25px; }
@@ -2947,6 +2948,8 @@ blockquote::before, q:before {
       text-transform: uppercase;
       padding-bottom: 10px;
       border-bottom: 1px solid rgba(255, 181, 0, 0.5); }
+    .site-footer .footer-widgets blockquote p, .site-footer .footer-widgets q p {
+      color: #8f8f8f; }
     .site-footer .footer-widgets ul li {
       padding: 5px 0 5px 0px;
       list-style: none;

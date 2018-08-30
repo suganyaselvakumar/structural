@@ -215,7 +215,7 @@ blockquote,q {
 		cite {
 			font-style: normal;
 			text-transform: uppercase;
-			color: $white;
+			color: $secondary;
 		}
 		a, a:visited {
 			color: $white;
@@ -346,7 +346,7 @@ blockquote,q {
 /* Gutenberg CSS style */
 
 
-ul {
+#primary ul {
 	list-style-type: disc;
 }
 .wp-block-latest-posts.aligncenter {
@@ -355,11 +355,11 @@ ul {
 .wp-block-verse {
 	color: $c3;	
 }
-.wp-block-quote::before,blockquote:before {
+.wp-block-quote::before, #primary blockquote:before {
 	content:"";
 	border: 0px;
 }
-.wp-block-quote,blockquote,q{
+.wp-block-quote,#primary blockquote,#primary q{
 	border-left: 4px solid black;
 	padding-left:5px;
 	margin-top: 0px;
@@ -380,10 +380,10 @@ ul {
 	font-style: italic;
 	padding-right: 20px;	
 }
-blockquote.wp-block-pullquote,blockquote,q {
+blockquote.wp-block-pullquote,#primary blockquote,#primary q {
 	margin-bottom:20px;
 }
-blockquote::before,q:before {
+#primary blockquote::before,#primary q:before {
 	content: "";
 	border: 0px;
 	border-radius: 0;	
@@ -394,7 +394,7 @@ blockquote::before,q:before {
 	padding: 0px;
 	padding-bottom: 10px;
 	margin: 0 auto;	
-	border-left:none;
+	border-left:none !important;
 }
 .wp-block-pullquote.alignleft {
 	margin-right: 25px;
