@@ -1712,7 +1712,6 @@ blockquote, q {
     position: relative; }
     blockquote p cite, q p cite {
       font-style: normal;
-      text-transform: uppercase;
       color: #131e32; }
     blockquote p a, blockquote p a:visited, q p a, q p a:visited {
       color: #fff;
@@ -1720,6 +1719,10 @@ blockquote, q {
       font-size: 1.4rem; }
     blockquote p a:hover, q p a:hover {
       color: #8f8f8f; }
+
+p cite {
+  font-style: normal;
+  color: #131e32; }
 
 .related-posts {
   padding: 20px 0; }
@@ -1803,38 +1806,38 @@ blockquote, q {
 .wp-block-verse {
   color: #8f8f8f; }
 
-.wp-block-quote::before, #primary blockquote:before {
-  content: "";
-  border: 0px; }
-
-.wp-block-quote, #primary blockquote, #primary q {
+.wp-block-quote {
   border-right: 4px solid black;
   padding-right: 5px;
   margin-top: 0px;
   padding-top: 0px; }
+  .wp-block-quote:before {
+    content: "";
+    border: 0px; }
+  .wp-block-quote cite {
+    margin: 0px;
+    padding-right: 20px; }
 
-.wp-block-quote cite {
-  margin: 0px;
-  padding-right: 20px; }
+#primary blockquote, #primary q {
+  border-right: 4px solid black;
+  padding-right: 5px;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 20px; }
+  #primary blockquote:before, #primary q:before {
+    content: "";
+    border: 0px;
+    border-radius: 0; }
 
-.is-large {
+.wp-block-quote.is-large {
   border: 0px;
   color: #131e32; }
-
-.is-large cite {
-  text-align: left;
-  display: block;
-  color: #333;
-  font-style: italic;
-  padding-left: 20px; }
-
-blockquote.wp-block-pullquote, #primary blockquote, #primary q {
-  margin-bottom: 20px; }
-
-#primary blockquote::before, #primary q:before {
-  content: "";
-  border: 0px;
-  border-radius: 0; }
+  .wp-block-quote.is-large cite {
+    text-align: left;
+    display: block;
+    color: #333;
+    font-style: italic;
+    padding-left: 20px; }
 
 .wp-block-pullquote {
   border-top: 4px solid black;
@@ -1842,7 +1845,8 @@ blockquote.wp-block-pullquote, #primary blockquote, #primary q {
   padding: 0px;
   padding-bottom: 10px;
   margin: 0 auto;
-  border-right: none !important; }
+  border-right: none !important;
+  margin-bottom: 20px; }
 
 .wp-block-pullquote.alignleft {
   margin-left: 25px; }
@@ -1850,15 +1854,7 @@ blockquote.wp-block-pullquote, #primary blockquote, #primary q {
 .wp-block-pullquote.alignright {
   margin-right: 25px; }
 
-.wp-block-button.aligncenter a:hover {
-  padding: 11px 24px;
-  box-shadow: -3px 3px black; }
-
-.wp-block-button.alignright a:hover {
-  padding: 11px 24px;
-  box-shadow: -3px 3px black; }
-
-.wp-block-button.alignleft a:hover {
+.wp-block-button a:hover {
   padding: 11px 24px;
   box-shadow: -3px 3px black;
   -webkit-box-shadow: -3px 3px black; }

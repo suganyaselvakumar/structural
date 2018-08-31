@@ -214,7 +214,6 @@ blockquote,q {
 	
 		cite {
 			font-style: normal;
-			text-transform: uppercase;
 			color: $secondary;
 		}
 		a, a:visited {
@@ -227,7 +226,12 @@ blockquote,q {
 		}
 	}
 }
-
+p {
+	cite {
+		font-style: normal;
+		color: $secondary;
+	}
+}
 .related-posts {
 	padding: 20px 0;
 	ul#structural-related-posts {
@@ -355,39 +359,48 @@ blockquote,q {
 .wp-block-verse {
 	color: $c3;	
 }
-.wp-block-quote::before, #primary blockquote:before {
-	content:"";
-	border: 0px;
-}
-.wp-block-quote,#primary blockquote,#primary q{
+.wp-block-quote {
 	border-left: 4px solid black;
 	padding-left:5px;
 	margin-top: 0px;
 	padding-top: 0px;
+	&:before {
+		content:"";
+		border: 0px;
+	}
+	cite {
+		margin: 0px;
+		padding-left: 20px;
+	}
 }
-.wp-block-quote cite {
-	margin: 0px;
-	padding-left: 20px;
+
+#primary {
+	blockquote,q {
+		border-left: 4px solid black;
+		padding-left:5px;
+		margin-top: 0px;
+		padding-top: 0px;
+		margin-bottom:20px;
+		&:before {
+			content: "";
+			border: 0px;
+			border-radius: 0;
+		}
+	}
 }
-.is-large {
+
+.wp-block-quote.is-large {
 	border: 0px;
 	color:$secondary;	
+	cite {
+		text-align: right;
+		display: block;
+		color: #333;
+		font-style: italic;
+		padding-right: 20px;
+	}
 }
-.is-large cite {	
-	text-align: right;
-	display: block;
-	color: #333;
-	font-style: italic;
-	padding-right: 20px;	
-}
-blockquote.wp-block-pullquote,#primary blockquote,#primary q {
-	margin-bottom:20px;
-}
-#primary blockquote::before,#primary q:before {
-	content: "";
-	border: 0px;
-	border-radius: 0;	
-}
+
 .wp-block-pullquote {
 	border-top: 4px solid black;
 	border-bottom: 4px solid black;
@@ -395,6 +408,7 @@ blockquote.wp-block-pullquote,#primary blockquote,#primary q {
 	padding-bottom: 10px;
 	margin: 0 auto;	
 	border-left:none !important;
+	margin-bottom:20px;
 }
 .wp-block-pullquote.alignleft {
 	margin-right: 25px;
@@ -403,26 +417,24 @@ blockquote.wp-block-pullquote,#primary blockquote,#primary q {
 	margin-left: 25px;
 }
 
-.wp-block-button.aligncenter a:hover {
- 	padding: 11px 24px;
-  box-shadow: 3px 3px black;
-	
+.wp-block-button {
+	a {
+		&:hover {
+			padding: 11px 24px;
+			box-shadow: 3px 3px black;
+			-webkit-box-shadow: 3px 3px black;
+		}
+	}
 }
-.wp-block-button.alignright a:hover {
- 	padding: 11px 24px;
-  box-shadow: 3px 3px black;
-	
-}
-.wp-block-button.alignleft a:hover {
- 	padding: 11px 24px;
-  box-shadow: 3px 3px black;	-webkit-box-shadow: 3px 3px black;
-}
+
 .wp-block-cover-image {
 	display:flex;
 }
+
 .wp-block-audio {
 	text-align:center;
 }
+
 .wp-block-button.aligncenter {
 	margin-bottom:1.5em;
 }
