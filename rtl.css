@@ -1712,14 +1712,17 @@ blockquote, q {
     position: relative; }
     blockquote p cite, q p cite {
       font-style: normal;
-      text-transform: uppercase;
-      color: #fff; }
+      color: #131e32; }
     blockquote p a, blockquote p a:visited, q p a, q p a:visited {
       color: #fff;
       font-size: 14px;
       font-size: 1.4rem; }
     blockquote p a:hover, q p a:hover {
       color: #8f8f8f; }
+
+p cite {
+  font-style: normal;
+  color: #131e32; }
 
 .related-posts {
   padding: 20px 0; }
@@ -1792,6 +1795,80 @@ blockquote, q {
     padding-left: 0px; }
   .search article .entry-meta .author a {
     padding-right: 0px; }
+
+
+#primary ul {
+  list-style-type: disc; }
+
+.wp-block-latest-posts.aligncenter {
+  margin-right: 3em; }
+
+.wp-block-verse {
+  color: #8f8f8f; }
+
+.wp-block-quote {
+  border-right: 4px solid black;
+  padding-right: 5px;
+  margin-top: 0px;
+  padding-top: 0px; }
+  .wp-block-quote:before {
+    content: "";
+    border: 0px; }
+  .wp-block-quote cite {
+    margin: 0px;
+    padding-right: 20px; }
+
+#primary blockquote, #primary q {
+  border-right: 4px solid black;
+  padding-right: 5px;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 20px; }
+  #primary blockquote:before, #primary q:before {
+    content: "";
+    border: 0px;
+    border-radius: 0; }
+
+.wp-block-quote.is-large {
+  border: 0px;
+  color: #131e32; }
+  .wp-block-quote.is-large cite {
+    text-align: left;
+    display: block;
+    color: #333;
+    font-style: italic;
+    padding-left: 20px; }
+
+.wp-block-pullquote {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  padding: 0px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  border-right: none !important;
+  margin-bottom: 20px; }
+
+.wp-block-pullquote.alignleft {
+  margin-left: 25px; }
+
+.wp-block-pullquote.alignright {
+  margin-right: 25px; }
+
+.wp-block-button a:hover {
+  padding: 11px 24px;
+  box-shadow: -3px 3px black;
+  -webkit-box-shadow: -3px 3px black; }
+
+.wp-block-cover-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.wp-block-audio {
+  text-align: center; }
+
+.wp-block-button.aligncenter {
+  margin-bottom: 1.5em; }
 
 .home .site-header {
   border-bottom: none; }
@@ -2867,6 +2944,8 @@ blockquote, q {
       text-transform: uppercase;
       padding-bottom: 10px;
       border-bottom: 1px solid rgba(255, 181, 0, 0.5); }
+    .site-footer .footer-widgets blockquote p, .site-footer .footer-widgets q p {
+      color: #8f8f8f; }
     .site-footer .footer-widgets ul li {
       padding: 5px 0 5px 0px;
       list-style: none;
